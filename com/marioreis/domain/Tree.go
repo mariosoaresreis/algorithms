@@ -21,6 +21,8 @@ func FindTree(toFind int32, tree *Tree) (result int) {
 		return 0
 	}
 
+	fmt.Printf("searching in node: %d\n", tree.Data)
+
 	if tree.Left == nil && tree.Right == nil {
 		return 0
 	}
@@ -53,11 +55,11 @@ func TestBinarySearch() {
 	var tree1 Tree = NewTree(&tree10, &tree20, 1)
 
 	fmt.Println("Finding data = 2")
-	fmt.Printf("Result: %d", FindTree(2, &tree1))
+	fmt.Printf("Result: %d\n", FindTree(2, &tree1))
 	fmt.Println("Finding data = 20")
-	fmt.Printf("Result: %d", FindTree(20, &tree1))
+	fmt.Printf("Result: %d\n", FindTree(20, &tree1))
 	fmt.Println("Finding data = 15")
-	fmt.Printf("Result: %d", FindTree(15, &tree1))
+	fmt.Printf("Result: %d\n", FindTree(15, &tree1))
 	fmt.Println("Finding data = 16")
-	fmt.Printf("Result: %d", FindTree(16, &tree1))
+	fmt.Printf("Result: %d\n", FindTree(16, &tree1))
 }
