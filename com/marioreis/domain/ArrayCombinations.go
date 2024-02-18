@@ -3,13 +3,7 @@ package domain
 import "fmt"
 
 func ArrayCombinations(slice []int) {
-	result := make([][]int, 0)
-
-	for i := 0; i < len(slice); i++ {
-		combine(0, slice, []int{})
-	}
-
-	fmt.Println(result)
+	combine(0, slice, []int{})
 }
 
 func combine(start int, originalSlice []int, subSlice []int) [][]int {
@@ -30,6 +24,7 @@ func combine(start int, originalSlice []int, subSlice []int) [][]int {
 		copy(tempSlice, subSlice)
 		tempSlice = append(tempSlice, originalSlice[i])
 		finalResult = append(finalResult, tempSlice)
+		fmt.Println(tempSlice)
 
 		if i+1 < maxSize {
 			combine(i+1, originalSlice, tempSlice)
