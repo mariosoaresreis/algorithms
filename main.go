@@ -1,8 +1,13 @@
 package main
 
-import "algorithms/com/marioreis/domain"
+import (
+	"algorithms/com/marioreis/domain"
+	"fmt"
+)
 
 func main() {
-	array := []int{1, 2, 3, 4, 5}
-	domain.ArrayCombinations(array)
+	count := 0
+	array := []int{1, 2, 3, 4}
+	domain.Permute(array, 0, len(array)-1, &count)
+	fmt.Println(count)
 }
