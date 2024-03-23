@@ -22,3 +22,30 @@ func consecutiveSubArrays(array []int) [][]int {
 
 	return result
 }
+
+func FindSubArraysPositions(array []int, k int) (start int, end int) {
+	start = 0
+	end = 0
+	sum := 0
+
+	for i := range array {
+		sum += array[i]
+		end = i
+
+		if sum == k {
+			return start, end
+		} else {
+			for sum > k {
+				sum -= array[start]
+				start++
+
+				if sum == k {
+					return
+				}
+
+			}
+		}
+	}
+
+	return start, end
+}
