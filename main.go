@@ -8,9 +8,8 @@ import (
 func main() {
 	array := []int{2, 4, 50, 6, 6}
 	start, end := domain.FindSubArraysPositions(array, 12)
-	fmt.Println("start %v", start)
-	fmt.Println("end %v", end)
-
+	println(fmt.Sprintf("start %v", start))
+	println(fmt.Sprintf("end %v", end))
 }
 
 // findElementsWithSum of k from arr of size
@@ -29,7 +28,6 @@ func findElementsWithSum(arr [10]int, combinations [19]int, size int, k int, add
 	}
 	var i int
 	for i = l; i < size; i++ {
-		//fmt.Println(" m", m)
 		combinations[m] = l
 		findElementsWithSum(arr, combinations, size, k, addValue+arr[i], l, m+1)
 		l = l + 1

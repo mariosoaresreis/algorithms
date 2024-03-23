@@ -33,7 +33,7 @@ func FindSubArraysPositions(array []int, k int) (start int, end int) {
 		end = i
 
 		if sum == k {
-			return start, end
+			return
 		} else {
 			for sum > k {
 				sum -= array[start]
