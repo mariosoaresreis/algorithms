@@ -6,9 +6,11 @@ import (
 )
 
 func main() {
-	array := []int{2, 4, 2, 3, 1}
-	cnt := domain.FindAllSubArraysWithGivenSum(array, 6)
-	println(cnt)
+	array := []int{2, 2, 3, 4, 0, 0, 0}
+	array2 := []int{1, 2, 4}
+	domain.Merge(array, 7, array2, 5)
+
+	println(array)
 }
 
 // findElementsWithSum of k from arr of size

@@ -57,6 +57,38 @@ func FindAllSubArraysWithGivenSum(array []int, k int) int {
 
 }
 
+func FindAllSubArraysWithGivenSum2(array []int, k int) int {
+	n := len(array)
+	count := 0
+
+	if n == 0 {
+		return 0
+	}
+
+	cpp := map[int]int{}
+	currSum := 0
+	i := 0
+
+	for i < n {
+		currSum += array[i]
+
+		if currSum == k {
+			count++
+		}
+
+		val, ok := cpp[currSum-k]
+
+		if ok {
+			count += val
+		}
+
+		cpp[currSum] += 1
+		i += 1
+	}
+
+	return count
+}
+
 func FindSubArraysPositions(array []int, k int) (start int, end int) {
 	start = 0
 	end = 0
