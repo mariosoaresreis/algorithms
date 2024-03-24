@@ -6,10 +6,9 @@ import (
 )
 
 func main() {
-	array := []int{2, 4, 50, 6, 6}
-	start, end := domain.FindSubArraysPositions(array, 12)
-	println(fmt.Sprintf("start %v", start))
-	println(fmt.Sprintf("end %v", end))
+	array := []int{2, 4, 2, 3, 1}
+	cnt := domain.FindAllSubArraysWithGivenSum(array, 6)
+	println(cnt)
 }
 
 // findElementsWithSum of k from arr of size

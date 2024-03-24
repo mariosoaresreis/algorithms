@@ -23,6 +23,40 @@ func consecutiveSubArrays(array []int) [][]int {
 	return result
 }
 
+// https://www.youtube.com/watch?v=HbbYPQc-Oo4&ab_channel=Techdose
+func FindAllSubArraysWithGivenSum(array []int, k int) int {
+	n := len(array)
+
+	if n == 0 {
+		return 0
+	}
+
+	mpp := map[int]int{}
+	currSum := 0
+	i := 0
+	count := 0
+
+	for i < n {
+		currSum += array[i]
+
+		if currSum == k {
+			count++
+		}
+
+		val, ok := mpp[currSum-k]
+
+		if ok {
+			count += val
+		}
+
+		mpp[currSum] += 1
+		i++
+	}
+
+	return count
+
+}
+
 func FindSubArraysPositions(array []int, k int) (start int, end int) {
 	start = 0
 	end = 0
