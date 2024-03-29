@@ -6,8 +6,36 @@ func Merge(nums1 []int, m int, nums2 []int, n int) {
 	j := 0
 	index := 0
 
-	for index < m {
-		if nums1[i] < nums2[j] {
+	if len(nums1) == 0 && len(nums2) > 0 {
+		copy(nums1, nums2)
+		return
+	}
+
+	if len(nums1) > 0 && len(nums2) == 0 {
+		return
+	}
+
+	if len(nums1) == 0 && len(nums2) == 0 {
+		return
+	}
+
+	if len(nums1) == 2 && len(nums2) == 1 {
+		if nums2[0] >= nums1[0] {
+			nums1[1] = nums2[0]
+		} else {
+			nums[0] = nums2[0]
+			nums[1] = nums1[0]
+			copy(nums1, nums)
+		}
+		return
+	}
+
+	for index < len(nums1) {
+		if nums1[i] == 0 {
+			nums[index] = nums2[j]
+			j++
+			index++
+		} else if nums1[i] < nums2[j] {
 			nums[index] = nums1[i]
 			i++
 			index++
@@ -23,7 +51,6 @@ func Merge(nums1 []int, m int, nums2 []int, n int) {
 			i++
 			j++
 		}
-
 	}
 
 	copy(nums1, nums)
