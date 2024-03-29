@@ -6,8 +6,8 @@ import (
 )
 
 func main() {
-	array := []int{1, 2, 3, 5}
-	fmt.Println(domain.FindMissingNumber(array))
+	array := []int{1, 2, 3, 4, 5, 6, 7, 9}
+	fmt.Println(domain.FindMissingNumberO2n(array))
 }
 
 // findElementsWithSum of k from arr of size
