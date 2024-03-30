@@ -40,9 +40,11 @@ func MaxWater2(arr []int, start int, res int) int {
 	for i := start; i < len(arr); i++ {
 		if arr[i] > 0 {
 			left = arr[i]
+			right = arr[i]
+			subtract := 0
 
 			for j := i + 1; j < len(arr); j++ {
-				if arr[j] > right {
+				if arr[j] >= right {
 					right = arr[j]
 					mostRightIndex = j
 					found = true
@@ -51,10 +53,14 @@ func MaxWater2(arr []int, start int, res int) int {
 				if found {
 					break
 				}
+
+				if j > i && arr[j] > 0 {
+					subtract += arr[j]
+				}
 			}
 
 			right = min(left, right)
-			result += (mostRightIndex - start - 1) * right
+			result += (mostRightIndex-start-1)*right - subtract
 
 			if found {
 				break

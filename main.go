@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	array := []int{5, 0, 5, 0, 0, 7, 0, 7}
+	array := []int{7, 0, 5, 0, 0, 7, 0, 7}
 	fmt.Println(domain.MaxWater2(array, 0, 0))
 }
 
