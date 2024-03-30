@@ -12,6 +12,32 @@ func FindMissingNumberOn(array []int) int {
 	return expectedSum - actualSum
 }
 
+func Solution(sequence []int) bool {
+	count := 0
+	lastNumber := sequence[0] - 1
+	m := -1000000
+
+	for i, _ := range sequence {
+		if count > 0 && sequence[i] <= m {
+			count++
+		}
+
+		if sequence[i] <= lastNumber {
+			count++
+		}
+
+		if sequence[i] > m {
+			m = sequence[i]
+		}
+
+		lastNumber = sequence[i]
+
+	}
+
+	return count <= 1
+
+}
+
 func FindMissingNumberO2n(array []int) int {
 	n := len(array)
 	temp := make([]int, n+1)
