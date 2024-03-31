@@ -6,8 +6,8 @@ import (
 )
 
 func main() {
-	array := []int{7, 0, 5, 0, 0, 7, 0, 7}
-	fmt.Println(domain.MaxWater2(array, 0, 0))
+	array := []int{1, 2, 2, 0, 2, 2, 1}
+	fmt.Println(domain.Equilibrium2(array, len(array)))
 }
 
 // findElementsWithSum of k from arr of size
