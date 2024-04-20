@@ -1,17 +1,34 @@
 package domain
 
+type Stack []int
+
+func (s *Stack) push(e int) {
+	*s = append(*s, e)
+}
+
+func (s *Stack) pop() (int, bool) {
+	if len(*s) == 0 {
+		return 0, false
+	}
+
+	index := len(*s) - 1
+	element := (*s)[index]
+	*s = (*s)[:index]
+	return element, true
+}
+
 func LeadersInArray(a []int) []int {
-	result := make([]int, 0, 10)
+	stack := Stack{}
 	start := len(a) - 1
 	maximum := a[start]
-	result = append(result, maximum)
+	stack.push(maximum)
 
 	for i := len(a) - 2; i >= 0; i-- {
 		if a[i] > maximum {
-			result = append(result, a[i])
+			stack.push(a[i])
 			maximum = a[i]
 		}
 	}
 
-	return result
+	return stack
 }
