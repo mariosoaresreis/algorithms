@@ -1,9 +1,11 @@
 package domain
 
+import "slices"
+
 type Stack []int
 
 func (s *Stack) push(e int) {
-	*s = append(*s, e)
+	*s = slices.Concat([]int{e}, *s)
 }
 
 func (s *Stack) pop() (int, bool) {
