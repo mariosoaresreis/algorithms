@@ -6,8 +6,8 @@ import (
 )
 
 func main() {
-	array := []int{1, 2, 2, 0, 2, 2, 1}
-	fmt.Println(domain.Equilibrium2(array, len(array)))
+	array := []int{16, 17, 4, 3, 5, 2}
+	fmt.Println(domain.LeadersInArray(array))
 }
 
 // findElementsWithSum of k from arr of size
