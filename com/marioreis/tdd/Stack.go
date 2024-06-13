@@ -1,5 +1,6 @@
 package tdd
 
+// Stack Last in first out
 type Stack struct {
 	elements []int
 	size     int
