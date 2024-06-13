@@ -1,14 +1,12 @@
 package main
 
 import (
-	"algorithms/com/marioreis/domain"
 	"fmt"
 )
 
 // deploy
 func main() {
-	array := []int{16, 17, 4, 3, 5, 2}
-	fmt.Println(domain.LeadersInArray(array))
+
 }
 
 // findElementsWithSum of k from arr of size
