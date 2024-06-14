@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4b64fa7-7967-49ee-a0fc-1c40855fc939" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/com/marioreis/tdd/Poker.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/marioreis/tdd/Poker_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/marioreis/tdd/Poker.go" beforeDir="false" afterPath="$PROJECT_DIR$/com/marioreis/tdd/Poker.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/marioreis/tdd/Poker_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/com/marioreis/tdd/Poker_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,11 +41,24 @@
     "Go Test.Test_AddCardToHandAndEvalAllSuitsEqual in algorithms/com/marioreis/tdd.executor": "Run",
     "Go Test.Test_AddCardToHandAndEvalAllSuitsNotEqual in algorithms/com/marioreis/tdd.executor": "Run",
     "Go Test.Test_AddCardToHandAndEvalHighestCard in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_AddCardToHandAndEvalIsSequence in algorithms/com/marioreis/tdd.executor": "Debug",
+    "Go Test.Test_AddCardToHandAndEvalIsSequence in algorithms/com/marioreis/tdd.executor": "Run",
+    "Go Test.Test_AddCardToHandAndEvalIsSequenceWithAceValuesOne in algorithms/com/marioreis/tdd.executor": "Run",
     "Go Test.Test_AddCardToHandAndOrder in algorithms/com/marioreis/tdd.executor": "Run",
     "Go Test.Test_CanInstantiateCard in algorithms/com/marioreis/tdd.executor": "Run",
+    "Go Test.Test_Flush in algorithms/com/marioreis/tdd.executor": "Run",
+    "Go Test.Test_FourOfAKind in algorithms/com/marioreis/tdd.executor": "Debug",
+    "Go Test.Test_FullHouse in algorithms/com/marioreis/tdd.executor": "Run",
     "Go Test.Test_GetCardValue in algorithms/com/marioreis/tdd.executor": "Run",
+    "Go Test.Test_HighCard in algorithms/com/marioreis/tdd.executor": "Debug",
+    "Go Test.Test_IsHandRoyalFlush in algorithms/com/marioreis/tdd.executor": "Run",
+    "Go Test.Test_NotPair in algorithms/com/marioreis/tdd.executor": "Run",
+    "Go Test.Test_Pair in algorithms/com/marioreis/tdd.executor": "Run",
     "Go Test.Test_RemoveFromEmptyStack in algorithms/com/marioreis/tdd.executor": "Run",
+    "Go Test.Test_Straight in algorithms/com/marioreis/tdd.executor": "Run",
+    "Go Test.Test_Straight_Flush in algorithms/com/marioreis/tdd.executor": "Run",
+    "Go Test.Test_ThreeOfAKind in algorithms/com/marioreis/tdd.executor": "Run",
+    "Go Test.Test_TwoPair in algorithms/com/marioreis/tdd.executor": "Run",
+    "Go Test.Test_order in algorithms/com/marioreis/tdd.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
@@ -63,7 +76,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Go Test.Test_AddCardToHandAndEvalIsSequence in algorithms/com/marioreis/tdd">
+  <component name="RunManager" selected="Go Test.Test_HighCard in algorithms/com/marioreis/tdd">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="algorithms" />
       <working_directory value="$PROJECT_DIR$" />
@@ -73,7 +86,7 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_AddCardToHandAndEvalAllSuitsEqual in algorithms/com/marioreis/tdd" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_HighCard in algorithms/com/marioreis/tdd" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="algorithms" />
       <working_directory value="$PROJECT_DIR$/com/marioreis/tdd" />
       <root_directory value="$PROJECT_DIR$" />
@@ -82,10 +95,10 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTest_AddCardToHandAndEvalAllSuitsEqual\E$" />
+      <pattern value="^\QTest_HighCard\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_AddCardToHandAndEvalAllSuitsNotEqual in algorithms/com/marioreis/tdd" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_NotPair in algorithms/com/marioreis/tdd" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="algorithms" />
       <working_directory value="$PROJECT_DIR$/com/marioreis/tdd" />
       <root_directory value="$PROJECT_DIR$" />
@@ -94,10 +107,10 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTest_AddCardToHandAndEvalAllSuitsNotEqual\E$" />
+      <pattern value="^\QTest_NotPair\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_AddCardToHandAndEvalHighestCard in algorithms/com/marioreis/tdd" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_Pair in algorithms/com/marioreis/tdd" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="algorithms" />
       <working_directory value="$PROJECT_DIR$/com/marioreis/tdd" />
       <root_directory value="$PROJECT_DIR$" />
@@ -106,10 +119,10 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTest_AddCardToHandAndEvalHighestCard\E$" />
+      <pattern value="^\QTest_Pair\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_AddCardToHandAndEvalIsSequence in algorithms/com/marioreis/tdd" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_ThreeOfAKind in algorithms/com/marioreis/tdd" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="algorithms" />
       <working_directory value="$PROJECT_DIR$/com/marioreis/tdd" />
       <root_directory value="$PROJECT_DIR$" />
@@ -118,10 +131,10 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTest_AddCardToHandAndEvalIsSequence\E$" />
+      <pattern value="^\QTest_ThreeOfAKind\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_AddCardToHandAndOrder in algorithms/com/marioreis/tdd" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_TwoPair in algorithms/com/marioreis/tdd" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="algorithms" />
       <working_directory value="$PROJECT_DIR$/com/marioreis/tdd" />
       <root_directory value="$PROJECT_DIR$" />
@@ -130,16 +143,16 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTest_AddCardToHandAndOrder\E$" />
+      <pattern value="^\QTest_TwoPair\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.Test_AddCardToHandAndEvalIsSequence in algorithms/com/marioreis/tdd" />
-        <item itemvalue="Go Test.Test_AddCardToHandAndEvalAllSuitsNotEqual in algorithms/com/marioreis/tdd" />
-        <item itemvalue="Go Test.Test_AddCardToHandAndEvalAllSuitsEqual in algorithms/com/marioreis/tdd" />
-        <item itemvalue="Go Test.Test_AddCardToHandAndEvalHighestCard in algorithms/com/marioreis/tdd" />
-        <item itemvalue="Go Test.Test_AddCardToHandAndOrder in algorithms/com/marioreis/tdd" />
+        <item itemvalue="Go Test.Test_HighCard in algorithms/com/marioreis/tdd" />
+        <item itemvalue="Go Test.Test_NotPair in algorithms/com/marioreis/tdd" />
+        <item itemvalue="Go Test.Test_Pair in algorithms/com/marioreis/tdd" />
+        <item itemvalue="Go Test.Test_TwoPair in algorithms/com/marioreis/tdd" />
+        <item itemvalue="Go Test.Test_ThreeOfAKind in algorithms/com/marioreis/tdd" />
       </list>
     </recent_temporary>
   </component>
@@ -161,7 +174,8 @@
       <option name="presentableId" value="Default" />
       <updated>1718288969247</updated>
       <workItem from="1718288970585" duration="1019000" />
-      <workItem from="1718369371922" duration="4570000" />
+      <workItem from="1718369371922" duration="5223000" />
+      <workItem from="1718391406412" duration="7318000" />
     </task>
     <servers />
   </component>
@@ -175,14 +189,29 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/tdd/Poker.go</url>
-          <line>108</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/com/marioreis/tdd/Poker_test.go</url>
+          <line>284</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/com/marioreis/tdd/Poker_test.go</url>
+          <line>370</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/com/marioreis/tdd/Poker.go</url>
-          <line>114</line>
-          <option name="timeStamp" value="4" />
+          <line>219</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/com/marioreis/tdd/Poker.go</url>
+          <line>247</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/com/marioreis/tdd/Poker.go</url>
+          <line>260</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

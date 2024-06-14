@@ -6,6 +6,7 @@ import (
 
 type Suit int
 type Symbol string
+type WinnerHand int
 
 const (
 	Clubs Suit = iota
@@ -17,7 +18,6 @@ const (
 const MaxCardsCount = 5
 
 const (
-	One   Symbol = "1"
 	Two   Symbol = "2"
 	Three Symbol = "3"
 	Four  Symbol = "4"
@@ -34,7 +34,6 @@ const (
 )
 
 var cardValues = map[Symbol]int{
-	One:   1,
 	Two:   2,
 	Three: 3,
 	Four:  4,
@@ -49,6 +48,18 @@ var cardValues = map[Symbol]int{
 	King:  13,
 	Ace:   14,
 }
+
+const (
+	RoyalFlush    WinnerHand = 1000
+	StraightFlush WinnerHand = 900
+	FourOfAKind   WinnerHand = 800
+	FullHouse     WinnerHand = 700
+	Flush         WinnerHand = 600
+	ThreeOfAKind  WinnerHand = 500
+	TwoPair       WinnerHand = 400
+	Pair          WinnerHand = 300
+	HighCard      WinnerHand = 200
+)
 
 type Card struct {
 	Suit   Suit
@@ -75,15 +86,29 @@ type Hand struct {
 	highestCard   int
 	allSuitsEqual bool
 	suits         map[Suit]int
+	sameOfAKind   map[Symbol]int
+	winnerHand    WinnerHand
+}
+
+func order(h *Hand) {
+	for i := len(h.cards) - 1; i >= 1; i-- {
+		if h.cards[i].Value > h.cards[i-1].Value {
+			swap(h.cards, i, i-1)
+		}
+	}
+
+	if isUnorderedSequenceWhereAceValuesOne(h.cards) {
+		ace := h.cards[0]
+		h.cards = append(h.cards, ace)
+		h.cards = h.cards[1:]
+	}
 }
 
 func (h *Hand) AddCard(card *Card) {
 	h.cards = append(h.cards, card)
 
-	for i := len(h.cards) - 1; i >= 1; i-- {
-		if h.cards[i].Value > h.cards[i-1].Value {
-			swap(h.cards, i, i-1)
-		}
+	if len(h.cards) >= 2 {
+		order(h)
 	}
 
 	if card.Value > h.highestCard {
@@ -94,6 +119,10 @@ func (h *Hand) AddCard(card *Card) {
 		h.suits = make(map[Suit]int)
 	}
 
+	if h.sameOfAKind == nil {
+		h.sameOfAKind = make(map[Symbol]int)
+	}
+
 	suitCount, exists := h.suits[card.Suit]
 
 	if exists {
@@ -102,7 +131,130 @@ func (h *Hand) AddCard(card *Card) {
 		h.suits[card.Suit] = 1
 	}
 
+	sameOfAKindCount, sameExists := h.sameOfAKind[card.Symbol]
+
+	if sameExists {
+		h.sameOfAKind[card.Symbol] = sameOfAKindCount + 1
+	} else {
+		h.sameOfAKind[card.Symbol] = 1
+	}
+
 	h.allSuitsEqual = len(h.suits) == 1
+
+	if isRoyalFlush(h) {
+		h.winnerHand = RoyalFlush
+	}
+}
+
+func isRoyalFlush(h *Hand) bool {
+	return h.allSuitsEqual && h.IsSequence() && h.cards[0].Symbol == "A"
+}
+
+func isStraightFlush(h *Hand) bool {
+	return h.allSuitsEqual && h.IsSequence() && h.cards[0].Symbol != "A"
+}
+
+func isFullHouse(hand *Hand) bool {
+	threeOfAKind := false
+	twoOfAKind := false
+
+	for i := range hand.sameOfAKind {
+		if hand.sameOfAKind[i] == 3 {
+			threeOfAKind = true
+		}
+
+		if hand.sameOfAKind[i] == 2 {
+			twoOfAKind = true
+		}
+	}
+
+	return threeOfAKind && twoOfAKind
+}
+
+func isFlush(hand *Hand) bool {
+	return hand.allSuitsEqual && !hand.IsSequence()
+}
+
+func isStraight(hand *Hand) bool {
+	return hand.IsSequence() && !hand.allSuitsEqual
+}
+
+func isThreeOfAKind(hand *Hand) bool {
+	threeOfAKind := false
+	twoOfAKind := false
+
+	for i := range hand.sameOfAKind {
+		if hand.sameOfAKind[i] == 3 {
+			threeOfAKind = true
+		}
+
+		if hand.sameOfAKind[i] == 2 {
+			twoOfAKind = true
+		}
+	}
+
+	return threeOfAKind && !twoOfAKind
+}
+
+func isUnorderedSequenceWhereAceValuesOne(cards []*Card) bool {
+	return cards[0].Value == 14 && cards[1].Value == 5 && cards[2].Value == 4 && cards[3].Value == 3 &&
+		cards[4].Value == 2
+}
+
+func isOrderedSequenceWhereAceValuesOne(cards []*Card) bool {
+	return cards[0].Value == 5 && cards[1].Value == 4 && cards[2].Value == 3 &&
+		cards[3].Value == 2 && cards[4].Value == 14
+}
+
+func isFourOfAKind(hand *Hand) bool {
+	for i := range hand.sameOfAKind {
+		if hand.sameOfAKind[i] == 4 {
+			return true
+		}
+	}
+
+	return false
+}
+
+func isTwoPair(hand *Hand) bool {
+	symbols := make(map[Symbol]int)
+
+	for i := range hand.sameOfAKind {
+		if hand.sameOfAKind[i] == 2 {
+			symbols[i] = 1
+		}
+	}
+
+	return len(symbols) == 2
+}
+
+func isPair(hand *Hand) bool {
+	if isFullHouse(hand) {
+		return false
+	}
+
+	symbols := make(map[Symbol]int)
+
+	for i := range hand.sameOfAKind {
+		if hand.sameOfAKind[i] == 2 {
+			symbols[i] = 1
+		}
+	}
+
+	return len(symbols) == 1
+}
+
+func isHighestCard(hand *Hand) bool {
+	isSequence := hand.IsSequence()
+	allSuitsEqual := hand.allSuitsEqual
+	pair := isPair(hand)
+	twoPair := isTwoPair(hand)
+	fullHouse := isFullHouse(hand)
+	threeOfAKind := isThreeOfAKind(hand)
+	fourOfAKind := isFourOfAKind(hand)
+
+	return !isSequence && !allSuitsEqual && !pair && !twoPair && !fullHouse && !threeOfAKind &&
+		!fourOfAKind
 }
 
 func (h *Hand) IsSequence() bool {
@@ -111,6 +263,10 @@ func (h *Hand) IsSequence() bool {
 	}
 
 	expectedValue := h.highestCard
+
+	if isOrderedSequenceWhereAceValuesOne(h.cards) {
+		return true
+	}
 
 	for i := range h.cards {
 		if expectedValue != h.cards[i].Value {
