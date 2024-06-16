@@ -87,5 +87,5 @@ func wrap2(word string, w int) string {
 		}
 	}
 
-	return ""
+	return "..."
 }
