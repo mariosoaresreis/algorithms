@@ -81,11 +81,7 @@ func wrap2(word string, w int) string {
 	for len(wrappedWord)+3 > w {
 		lastIndex := strings.LastIndex(wrappedWord, " ")
 		wrappedWord = wrappedWord[:lastIndex]
-
-		if len(wrappedWord)+3 <= w {
-			return wrappedWord + "..."
-		}
 	}
 
-	return "..."
+	return wrappedWord + "..."
 }
