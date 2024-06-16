@@ -74,6 +74,11 @@ func Test_Wrap5(t *testing.T) {
 		t.Error("Test C failed")
 	}
 
+	// Test D
+	if !assertWrap2("hello my little friend", 18, "hello my little...") {
+		t.Error("Test D failed")
+	}
+
 }
 
 func wrap2(word string, w int) string {
