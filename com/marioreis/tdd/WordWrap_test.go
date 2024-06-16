@@ -33,7 +33,6 @@ func Test_Wrap4(t *testing.T) {
 }
 
 func assertWrap(s string, i int, s2 string) bool {
-	println(wrap(s, i))
 	return wrap(s, i) == s2
 }
 
@@ -53,4 +52,40 @@ func wrap(word string, w int) string {
 
 	result := strings.Trim(newString, " ") + "\n" + wrap(word[maxIndex+1:], w)
 	return result
+}
+
+func assertWrap2(s string, i int, s2 string) bool {
+	return wrap2(s, i) == s2
+}
+
+func Test_Wrap5(t *testing.T) {
+	// Test A
+	if !assertWrap2("hello my little friend", 24, "hello my little friend") {
+		t.Error("Test A failed")
+	}
+
+	// Test B
+	if !assertWrap2("hello my little friend", 17, "hello my...") {
+		t.Error("Test B failed")
+	}
+
+}
+
+func wrap2(word string, w int) string {
+	if len(word) <= w {
+		return word
+	}
+
+	wrappedWord := word
+
+	for len(wrappedWord)+3 > w {
+		lastIndex := strings.LastIndex(wrappedWord, " ")
+		wrappedWord = wrappedWord[:lastIndex]
+
+		if len(wrappedWord)+3 <= w {
+			return wrappedWord + "..."
+		}
+	}
+
+	return ""
 }
