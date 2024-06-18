@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4b64fa7-7967-49ee-a0fc-1c40855fc939" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/com/marioreis/tdd/AlmostIncreasingArray.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/marioreis/tdd/MatrixElementsSum_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/marioreis/tdd/WordWrap_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/com/marioreis/tdd/WordWrap_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/marioreis/tdd/AlmostIncreasingArray.go" beforeDir="false" afterPath="$PROJECT_DIR$/com/marioreis/tdd/AlmostIncreasingArray_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +51,7 @@
     "Go Test.Test_GetCardValue in algorithms/com/marioreis/tdd.executor": "Run",
     "Go Test.Test_HighCard in algorithms/com/marioreis/tdd.executor": "Run",
     "Go Test.Test_IsHandRoyalFlush in algorithms/com/marioreis/tdd.executor": "Run",
+    "Go Test.Test_MatrixElementsSum in algorithms/com/marioreis/tdd.executor": "Debug",
     "Go Test.Test_NotPair in algorithms/com/marioreis/tdd.executor": "Run",
     "Go Test.Test_Pair in algorithms/com/marioreis/tdd.executor": "Run",
     "Go Test.Test_RemoveFromEmptyStack in algorithms/com/marioreis/tdd.executor": "Run",
@@ -64,6 +65,7 @@
     "Go Test.Test_Wrap4 in algorithms/com/marioreis/tdd.executor": "Run",
     "Go Test.Test_Wrap5 in algorithms/com/marioreis/tdd.executor": "Run",
     "Go Test.Test_Wrap6 in algorithms/com/marioreis/tdd.executor": "Run",
+    "Go Test.Test_almostIncreasingArray in algorithms/com/marioreis/tdd.executor": "Debug",
     "Go Test.Test_order in algorithms/com/marioreis/tdd.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
@@ -82,7 +84,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Go Test.Test_Wrap6 in algorithms/com/marioreis/tdd">
+  <component name="RunManager" selected="Go Test.Test_MatrixElementsSum in algorithms/com/marioreis/tdd">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="algorithms" />
       <working_directory value="$PROJECT_DIR$" />
@@ -90,6 +92,18 @@
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test_MatrixElementsSum in algorithms/com/marioreis/tdd" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="algorithms" />
+      <working_directory value="$PROJECT_DIR$/com/marioreis/tdd" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="algorithms/com/marioreis/tdd" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTest_MatrixElementsSum\E$" />
       <method v="2" />
     </configuration>
     <configuration name="Test_Wrap2 in algorithms/com/marioreis/tdd" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -102,30 +116,6 @@
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
       <pattern value="^\QTest_Wrap2\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Test_Wrap3 in algorithms/com/marioreis/tdd" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="algorithms" />
-      <working_directory value="$PROJECT_DIR$/com/marioreis/tdd" />
-      <root_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="algorithms/com/marioreis/tdd" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTest_Wrap3\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Test_Wrap4 in algorithms/com/marioreis/tdd" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="algorithms" />
-      <working_directory value="$PROJECT_DIR$/com/marioreis/tdd" />
-      <root_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="algorithms/com/marioreis/tdd" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTest_Wrap4\E$" />
       <method v="2" />
     </configuration>
     <configuration name="Test_Wrap5 in algorithms/com/marioreis/tdd" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -152,13 +142,25 @@
       <pattern value="^\QTest_Wrap6\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="Test_almostIncreasingArray in algorithms/com/marioreis/tdd" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="algorithms" />
+      <working_directory value="$PROJECT_DIR$/com/marioreis/tdd" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="algorithms/com/marioreis/tdd" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTest_almostIncreasingArray\E$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.Test_MatrixElementsSum in algorithms/com/marioreis/tdd" />
+        <item itemvalue="Go Test.Test_almostIncreasingArray in algorithms/com/marioreis/tdd" />
         <item itemvalue="Go Test.Test_Wrap6 in algorithms/com/marioreis/tdd" />
         <item itemvalue="Go Test.Test_Wrap5 in algorithms/com/marioreis/tdd" />
         <item itemvalue="Go Test.Test_Wrap2 in algorithms/com/marioreis/tdd" />
-        <item itemvalue="Go Test.Test_Wrap3 in algorithms/com/marioreis/tdd" />
-        <item itemvalue="Go Test.Test_Wrap4 in algorithms/com/marioreis/tdd" />
       </list>
     </recent_temporary>
   </component>
@@ -185,7 +187,7 @@
       <workItem from="1718572600300" duration="1992000" />
       <workItem from="1718640088489" duration="295000" />
       <workItem from="1718662310415" duration="8796000" />
-      <workItem from="1718715954591" duration="2625000" />
+      <workItem from="1718715954591" duration="4810000" />
     </task>
     <servers />
   </component>
@@ -227,6 +229,11 @@
           <url>file://$PROJECT_DIR$/com/marioreis/tdd/WordWrap_test.go</url>
           <line>14</line>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/com/marioreis/tdd/MatrixElementsSum_test.go</url>
+          <line>11</line>
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

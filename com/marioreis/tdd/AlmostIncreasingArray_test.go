@@ -2,7 +2,7 @@ package tdd
 
 import "testing"
 
-func Test_AlmostIncreasingArray(t *testing.T) {
+func Test_almostIncreasingArray(t *testing.T) {
 	if !almostIncreasingArray([]int{10, 1, 2, 3, 4}) {
 		t.Error("Test A failed")
 	}
@@ -21,6 +21,10 @@ func Test_AlmostIncreasingArray(t *testing.T) {
 
 	if almostIncreasingArray([]int{1, 2, 5, 5, 5}) {
 		t.Error("Test E failed")
+	}
+
+	if !almostIncreasingArray([]int{1, 2, 3, 4, 5, 3}) {
+		t.Error("Test F failed")
 	}
 
 }
