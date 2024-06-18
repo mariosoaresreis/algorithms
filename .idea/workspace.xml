@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4b64fa7-7967-49ee-a0fc-1c40855fc939" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/com/marioreis/tdd/AlmostIncreasingArray.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com/marioreis/tdd/WordWrap_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/com/marioreis/tdd/WordWrap_test.go" afterDir="false" />
     </list>
@@ -184,7 +185,7 @@
       <workItem from="1718572600300" duration="1992000" />
       <workItem from="1718640088489" duration="295000" />
       <workItem from="1718662310415" duration="8796000" />
-      <workItem from="1718715954591" duration="2108000" />
+      <workItem from="1718715954591" duration="2625000" />
     </task>
     <servers />
   </component>
@@ -226,11 +227,6 @@
           <url>file://$PROJECT_DIR$/com/marioreis/tdd/WordWrap_test.go</url>
           <line>14</line>
           <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/tdd/WordWrap_test.go</url>
-          <line>107</line>
-          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
