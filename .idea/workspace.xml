@@ -62,7 +62,7 @@
     "Go Test.Test_Wrap3 in algorithms/com/marioreis/tdd.executor": "Run",
     "Go Test.Test_Wrap4 in algorithms/com/marioreis/tdd.executor": "Run",
     "Go Test.Test_Wrap5 in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_Wrap6 in algorithms/com/marioreis/tdd.executor": "Debug",
+    "Go Test.Test_Wrap6 in algorithms/com/marioreis/tdd.executor": "Run",
     "Go Test.Test_order in algorithms/com/marioreis/tdd.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
@@ -183,7 +183,8 @@
       <workItem from="1718391406412" duration="14519000" />
       <workItem from="1718572600300" duration="1992000" />
       <workItem from="1718640088489" duration="295000" />
-      <workItem from="1718662310415" duration="6889000" />
+      <workItem from="1718662310415" duration="8796000" />
+      <workItem from="1718715954591" duration="2108000" />
     </task>
     <servers />
   </component>
@@ -228,13 +229,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/com/marioreis/tdd/WordWrap_test.go</url>
-          <line>88</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/tdd/WordWrap_test.go</url>
-          <line>147</line>
-          <option name="timeStamp" value="29" />
+          <line>107</line>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -82,67 +82,72 @@ func Test_Wrap5(t *testing.T) {
 }
 
 func Test_Wrap6(t *testing.T) {
-	solution([]int{1, 3, 2, 1})
+	if !solution([]int{10, 1, 2, 3, 4}) {
+		t.Error("Test A failed")
+	}
+
+	if solution([]int{1, 2, 1, 2, 3}) == true {
+		t.Error("Test B failed")
+	}
+
+	if !solution([]int{1, 2, 3, 5, 4, 5}) {
+		t.Error("Test C failed")
+	}
+
+	if !solution([]int{1, 2, 3, 6, 5}) {
+		t.Error("Test D failed")
+	}
+
+	if solution([]int{1, 2, 5, 5, 5}) {
+		t.Error("Test E failed")
+	}
+
 }
 
 func solution(sequence []int) bool {
-	lastNumber := sequence[0]
+	lastNum := sequence[0]
 	count := 0
 
-	for i := range sequence {
-		if i == 0 {
-			continue
-		}
+	if len(sequence) <= 2 {
+		return true
+	}
 
-		if sequence[i] <= lastNumber {
+	for i := 1; i < len(sequence); i++ {
+		if sequence[i] <= lastNum {
+			count++
 
-			// 1 2 5 3 5
-			// 1 2 5 4 6
 			if i == 1 {
-				lastNumber = sequence[0]
+				lastNum = sequence[i]
 				continue
-			} else {
-				count++
-				lNumber := sequence[i-2]
+			}
 
-				for j := i - 2; j <= i+1; j++ {
-					if j == 0 {
-						continue
-					}
+			if len(sequence) >= 3 && i >= 1 && sequence[i] == sequence[i-1] && sequence[i] == sequence[i+1] {
+				return false
+			}
 
-					if j == i {
-						continue
-					}
-
-					if sequence[j] < lNumber {
-						count++
-					}
-
-					lNumber = sequence[j]
+			if i <= len(sequence)-2 && sequence[i-1] >= sequence[i+1] {
+				if i >= 2 && sequence[i] <= sequence[i-2] {
+					return false
 				}
 
-				lNumber = sequence[i-2]
-				for j := i - 2; j <= i+1; j++ {
-					if j == 0 {
-						continue
-					}
-
-					if j == i-1 {
-						continue
-					}
-
-					if sequence[j] < lNumber {
-						count++
-					}
-
-					lNumber = sequence[j]
+				if i >= 2 {
+					lastNum = sequence[i-2]
+					continue
+				} else {
+					lastNum = sequence[i-1]
+					continue
 				}
+
+			}
+
+			if i <= len(sequence)-2 && i >= 1 && sequence[i-1] <= sequence[i+1] {
+				lastNum = sequence[i-1]
+				continue
 			}
 
 		}
 
-		lastNumber = sequence[i]
-
+		lastNum = sequence[i]
 	}
 
 	return count < 2
