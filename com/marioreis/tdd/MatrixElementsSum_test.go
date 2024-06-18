@@ -1,10 +1,16 @@
 package tdd
 
-import "testing"
+import (
+	"strings"
+	"testing"
+)
 
 func Test_MatrixElementsSum(t *testing.T) {
 	matrix := [][]int{{1}, {5}, {0}, {2}}
 	println(solution(matrix))
+	s := "teste"
+	r := strings.ReplaceAll(s, "t", "")
+	println(r)
 
 }
 
