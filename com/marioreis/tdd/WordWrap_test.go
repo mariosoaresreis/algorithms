@@ -81,6 +81,73 @@ func Test_Wrap5(t *testing.T) {
 
 }
 
+func Test_Wrap6(t *testing.T) {
+	solution([]int{1, 3, 2, 1})
+}
+
+func solution(sequence []int) bool {
+	lastNumber := sequence[0]
+	count := 0
+
+	for i := range sequence {
+		if i == 0 {
+			continue
+		}
+
+		if sequence[i] <= lastNumber {
+
+			// 1 2 5 3 5
+			// 1 2 5 4 6
+			if i == 1 {
+				lastNumber = sequence[0]
+				continue
+			} else {
+				count++
+				lNumber := sequence[i-2]
+
+				for j := i - 2; j <= i+1; j++ {
+					if j == 0 {
+						continue
+					}
+
+					if j == i {
+						continue
+					}
+
+					if sequence[j] < lNumber {
+						count++
+					}
+
+					lNumber = sequence[j]
+				}
+
+				lNumber = sequence[i-2]
+				for j := i - 2; j <= i+1; j++ {
+					if j == 0 {
+						continue
+					}
+
+					if j == i-1 {
+						continue
+					}
+
+					if sequence[j] < lNumber {
+						count++
+					}
+
+					lNumber = sequence[j]
+				}
+			}
+
+		}
+
+		lastNumber = sequence[i]
+
+	}
+
+	return count < 2
+}
+
 func wrap2(word string, w int) string {
 	if len(word) <= w {
 		return word
