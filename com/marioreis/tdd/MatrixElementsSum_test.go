@@ -7,14 +7,14 @@ import (
 
 func Test_MatrixElementsSum(t *testing.T) {
 	matrix := [][]int{{1}, {5}, {0}, {2}}
-	println(solution(matrix))
+	println(solution1(matrix))
 	s := "teste"
 	r := strings.ReplaceAll(s, "t", "")
 	println(r)
 
 }
 
-func solution(matrix [][]int) int {
+func solution1(matrix [][]int) int {
 	sum := 0
 
 	for i := range matrix {

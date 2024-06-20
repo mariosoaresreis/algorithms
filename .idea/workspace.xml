@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4b64fa7-7967-49ee-a0fc-1c40855fc939" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/com/marioreis/tdd/CommonCharacter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/marioreis/tdd/SortByHeight.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com/marioreis/tdd/MatrixElementsSum_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/com/marioreis/tdd/MatrixElementsSum_test.go" afterDir="false" />
     </list>
@@ -33,57 +33,57 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultGoTemplateProperty": "Go File",
-    "Go Build.go build algorithms.executor": "Run",
-    "Go Test.Test_AddCardToHand in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_AddCardToHandAndEvalAllSuitsEqual in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_AddCardToHandAndEvalAllSuitsNotEqual in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_AddCardToHandAndEvalHighestCard in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_AddCardToHandAndEvalIsSequence in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_AddCardToHandAndEvalIsSequenceWithAceValuesOne in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_AddCardToHandAndOrder in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_CanInstantiateCard in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_Flush in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_FourOfAKind in algorithms/com/marioreis/tdd.executor": "Debug",
-    "Go Test.Test_FullHouse in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_GetCardValue in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_HighCard in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_IsHandRoyalFlush in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_MatrixElementsSum in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_NotPair in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_Pair in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_RemoveFromEmptyStack in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_Straight in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_Straight_Flush in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_ThreeOfAKind in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_TwoPair in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_Wrap in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_Wrap2 in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_Wrap3 in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_Wrap4 in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_Wrap5 in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_Wrap6 in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_almostIncreasingArray in algorithms/com/marioreis/tdd.executor": "Debug",
-    "Go Test.Test_order in algorithms/com/marioreis/tdd.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/bat/work/workspace/go/algorithms",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;Go Build.go build algorithms.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_AddCardToHand in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_AddCardToHandAndEvalAllSuitsEqual in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_AddCardToHandAndEvalAllSuitsNotEqual in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_AddCardToHandAndEvalHighestCard in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_AddCardToHandAndEvalIsSequence in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_AddCardToHandAndEvalIsSequenceWithAceValuesOne in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_AddCardToHandAndOrder in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_CanInstantiateCard in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_Flush in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_FourOfAKind in algorithms/com/marioreis/tdd.executor&quot;: &quot;Debug&quot;,
+    &quot;Go Test.Test_FullHouse in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_GetCardValue in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_HighCard in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_IsHandRoyalFlush in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_MatrixElementsSum in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_NotPair in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_Pair in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_RemoveFromEmptyStack in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_Straight in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_Straight_Flush in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_ThreeOfAKind in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_TwoPair in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_Wrap in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_Wrap2 in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_Wrap3 in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_Wrap4 in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_Wrap5 in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_Wrap6 in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_almostIncreasingArray in algorithms/com/marioreis/tdd.executor&quot;: &quot;Debug&quot;,
+    &quot;Go Test.Test_order in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/bat/work/workspace/go/algorithms&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Go Test.Test_MatrixElementsSum in algorithms/com/marioreis/tdd">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="algorithms" />
@@ -167,8 +167,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17890.1" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17890.1" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.55" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.55" />
         <option value="jdk-17.0.9-semeru-17.0.9-49964104c9db-0990a071" />
       </set>
     </attachedChunks>
@@ -187,7 +187,8 @@
       <workItem from="1718572600300" duration="1992000" />
       <workItem from="1718640088489" duration="295000" />
       <workItem from="1718662310415" duration="8796000" />
-      <workItem from="1718715954591" duration="7162000" />
+      <workItem from="1718715954591" duration="7771000" />
+      <workItem from="1718926479612" duration="76000" />
     </task>
     <servers />
   </component>
@@ -232,7 +233,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/com/marioreis/tdd/MatrixElementsSum_test.go</url>
-          <line>17</line>
+          <line>16</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
       </breakpoints>
