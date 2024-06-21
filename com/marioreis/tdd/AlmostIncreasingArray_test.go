@@ -1,6 +1,56 @@
 package tdd
 
-import "testing"
+import (
+	"fmt"
+	"slices"
+	"strings"
+	"testing"
+)
+
+func Test_reverse(t *testing.T) {
+	inputString := "(1(23(45)6(78)9))"
+	//word2 := "123556879"
+
+	for strings.LastIndex(inputString, ")") != -1 {
+		println(inputString)
+		begin := strings.LastIndex(inputString, "(")
+		println(begin)
+		end := lastIndex(inputString, begin, len(inputString)-1)
+		println(end)
+		inputString = reverse([]byte(inputString), begin, end)
+	}
+
+	println(fmt.Sprintf("final result %s", inputString))
+}
+
+func lastIndex(word string, begin int, end int) int {
+	for i := begin; i <= end; i++ {
+		if word[i] == ')' {
+			return i
+		}
+	}
+
+	return -1
+}
+
+func reverse(word []byte, begin int, end int) string {
+	j := 0
+	e := (end-begin)/2 + begin
+
+	if end%2 == 0 {
+		e = (end-begin)/2 + begin
+	}
+
+	for i := begin; i <= e; i++ {
+		temp := word[i]
+		word[i] = word[end-j]
+		word[end-j] = temp
+		j++
+	}
+	result := slices.Concat(slices.Concat(word[0:begin], word[begin+1:end]), word[end+1:])
+	r := string(result)
+	return r
+}
 
 func Test_almostIncreasingArray(t *testing.T) {
 	if !almostIncreasingArray([]int{10, 1, 2, 3, 4}) {
