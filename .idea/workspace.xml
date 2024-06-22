@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4b64fa7-7967-49ee-a0fc-1c40855fc939" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/com/marioreis/signal.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/marioreis/signal/SimilarArrays.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,6 +84,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/com/marioreis/signal" />
+      <recent name="$PROJECT_DIR$/com/marioreis/code_writing" />
+    </key>
+  </component>
   <component name="RunManager" selected="Go Test.Test_reverse in algorithms/com/marioreis/tdd">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="algorithms" />
@@ -189,7 +195,7 @@
       <workItem from="1718662310415" duration="8796000" />
       <workItem from="1718715954591" duration="7771000" />
       <workItem from="1718926479612" duration="685000" />
-      <workItem from="1719002102048" duration="8412000" />
+      <workItem from="1719002102048" duration="9198000" />
     </task>
     <servers />
   </component>
@@ -233,17 +239,17 @@
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/tdd/MatrixElementsSum_test.go</url>
+          <url>file://$PROJECT_DIR$/com/marioreis/signal/MatrixElementsSum_test.go</url>
           <line>8</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/tdd/AlmostIncreasingArray_test.go</url>
+          <url>file://$PROJECT_DIR$/com/marioreis/signal/AlmostIncreasingArray_test.go</url>
           <line>23</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/tdd/AlmostIncreasingArray_test.go</url>
+          <url>file://$PROJECT_DIR$/com/marioreis/signal/AlmostIncreasingArray_test.go</url>
           <line>10</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
