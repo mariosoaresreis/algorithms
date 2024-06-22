@@ -1,4 +1,4 @@
-package tdd
+package signal
 
 func sortByHeight(a []int) []int {
 	for j := 0; j < len(a)-1; j++ {

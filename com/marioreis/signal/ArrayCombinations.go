@@ -1,4 +1,4 @@
-package domain
+package signal
 
 import "fmt"
 

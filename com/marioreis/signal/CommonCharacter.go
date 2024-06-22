@@ -1,4 +1,4 @@
-package tdd
+package signal
 
 import "strings"
 
