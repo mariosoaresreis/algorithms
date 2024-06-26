@@ -8,6 +8,12 @@ func Test_CanInstantiateCard(t *testing.T) {
 	if err != nil || card.Value != 2 {
 		t.Errorf("Incorrect Value!")
 	}
+
+	test := [][]int{{1, 2, 3},
+		{1, 2, 3}}
+	println(len(test))
+	println(len(test[0]))
+
 }
 
 func Test_AddCardToHand(t *testing.T) {
