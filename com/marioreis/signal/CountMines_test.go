@@ -25,44 +25,35 @@ func countMines(matrix [][]bool, i int, j int, maxI int, maxJ int) int {
 	if (i >= 1) && (matrix[i-1][j] == true) {
 		count++
 	}
-	println("A")
 
 	if (j >= 1) && (matrix[i][j-1] == true) {
 		count++
 	}
-	println("B")
 
 	if (j < maxJ) && (matrix[i][j+1] == true) {
 		count++
 	}
 
-	println("C")
-
 	if i < maxI && (matrix[i+1][j] == true) {
 		count++
 	}
-	println("D")
 
 	if (i < maxI) && (j < maxJ) && (matrix[i+1][j+1] == true) {
 		count++
 	}
-	println("E")
 
 	if (i >= 1) && (j < maxJ) && (matrix[i-1][j+1]) == true {
 		count++
 	}
-	println("F")
 
 	if (i >= 1) && (j >= 1) && (matrix[i-1][j-1] == true) {
 		count++
 	}
-	println("G")
 
 	if (i < maxI) && (j >= 1) && (matrix[i+1][j-1] == true) {
 		count++
 	}
-	println("H")
-
+	
 	return count
 
 }
