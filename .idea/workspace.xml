@@ -7,7 +7,6 @@
     <list default="true" id="d4b64fa7-7967-49ee-a0fc-1c40855fc939" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/com/marioreis/signal/AlmostIncreasingArray_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/com/marioreis/signal/AlmostIncreasingArray_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/marioreis/signal/CountMines_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/com/marioreis/signal/CountMines_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +65,7 @@
     "Go Test.Test_Wrap4 in algorithms/com/marioreis/tdd.executor": "Run",
     "Go Test.Test_Wrap5 in algorithms/com/marioreis/tdd.executor": "Run",
     "Go Test.Test_Wrap6 in algorithms/com/marioreis/tdd.executor": "Run",
-    "Go Test.Test_almostIncreasingArray in algorithms/com/marioreis/signal.executor": "Debug",
+    "Go Test.Test_almostIncreasingArray in algorithms/com/marioreis/signal.executor": "Run",
     "Go Test.Test_almostIncreasingArray in algorithms/com/marioreis/tdd.executor": "Debug",
     "Go Test.Test_order in algorithms/com/marioreis/tdd.executor": "Run",
     "Go Test.Test_reverse in algorithms/com/marioreis/tdd.executor": "Debug",
@@ -204,7 +203,7 @@
       <workItem from="1719412293349" duration="5183000" />
       <workItem from="1719501858663" duration="1299000" />
       <workItem from="1719509216209" duration="53000" />
-      <workItem from="1719581842836" duration="933000" />
+      <workItem from="1719581842836" duration="1136000" />
     </task>
     <servers />
   </component>
@@ -266,11 +265,6 @@
           <url>file://$PROJECT_DIR$/com/marioreis/tdd/Poker_test.go</url>
           <line>16</line>
           <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/signal/AlmostIncreasingArray_test.go</url>
-          <line>86</line>
-          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
