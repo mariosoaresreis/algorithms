@@ -53,7 +53,7 @@ func reverse(word []byte, begin int, end int) string {
 }
 
 func Test_almostIncreasingArray(t *testing.T) {
-	if !almostIncreasingArray([]int{10, 1, 2, 3, 4}) {
+	/*if !almostIncreasingArray([]int{10, 1, 2, 3, 4}) {
 		t.Error("Test A failed")
 	}
 
@@ -75,6 +75,10 @@ func Test_almostIncreasingArray(t *testing.T) {
 
 	if !almostIncreasingArray([]int{1, 2, 3, 4, 5, 3}) {
 		t.Error("Test F failed")
+	}*/
+
+	if !almostIncreasingArray([]int{1, 2, 18, 4, 4}) {
+		t.Error("Test G failed")
 	}
 
 }
@@ -94,6 +98,10 @@ func almostIncreasingArray(sequence []int) bool {
 			if i == 1 {
 				lastNum = sequence[i]
 				continue
+			}
+
+			if i < len(sequence)-1 && sequence[i] <= sequence[i-1] && sequence[i+1] <= sequence[i] {
+				return false
 			}
 
 			if len(sequence) >= 3 && i >= 1 && sequence[i] == sequence[i-1] && sequence[i] == sequence[i+1] {

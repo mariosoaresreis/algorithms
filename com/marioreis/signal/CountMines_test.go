@@ -53,7 +53,7 @@ func countMines(matrix [][]bool, i int, j int, maxI int, maxJ int) int {
 	if (i < maxI) && (j >= 1) && (matrix[i+1][j-1] == true) {
 		count++
 	}
-	
+
 	return count
 
 }
