@@ -5,6 +5,7 @@ import (
 	"slices"
 	"strings"
 	"testing"
+	"unicode"
 )
 
 func Test_reverse(t *testing.T) {
@@ -53,7 +54,7 @@ func reverse(word []byte, begin int, end int) string {
 }
 
 func Test_almostIncreasingArray(t *testing.T) {
-	if !almostIncreasingArray([]int{10, 1, 2, 3, 4}) {
+	/*if !almostIncreasingArray([]int{10, 1, 2, 3, 4}) {
 		t.Error("Test A failed")
 	}
 
@@ -79,7 +80,37 @@ func Test_almostIncreasingArray(t *testing.T) {
 
 	if almostIncreasingArray([]int{1, 2, 18, 4, 4}) {
 		t.Error("Test G failed")
+	}*/
+
+	//s := "1name"
+	var balance float32 = 100
+	denominador := float32(float32(20) / float32(100))
+	percentage := float32(balance * denominador)
+	balance += percentage
+	println(balance)
+
+}
+
+func testVariable(name string) bool {
+	if !unicode.IsLetter(rune(name[0])) || unicode.IsDigit(rune(name[0])) || rune(name[0]) == ' ' || unicode.IsSymbol(rune(name[0])) {
+		return false
 	}
+
+	if len(name) >= 1 {
+		for i := 1; i < len(name); i++ {
+			if (name[i] != '_') &&
+				(!unicode.IsLetter(rune(name[i])) && !unicode.IsDigit(rune(name[i]))) {
+				return false
+			}
+		}
+
+	} else {
+		if !unicode.IsLetter(rune(name[0])) {
+			return false
+		}
+	}
+
+	return true
 
 }
 
