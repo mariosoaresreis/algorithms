@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4b64fa7-7967-49ee-a0fc-1c40855fc939" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/com/marioreis/grokking/HighestSquare.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/marioreis/grokking/FindNonDuplicates.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -206,7 +206,7 @@
       <workItem from="1719581842836" duration="7830000" />
       <workItem from="1719698203049" duration="1696000" />
       <workItem from="1719767643281" duration="5471000" />
-      <workItem from="1719842836503" duration="103000" />
+      <workItem from="1719842836503" duration="188000" />
     </task>
     <servers />
   </component>
