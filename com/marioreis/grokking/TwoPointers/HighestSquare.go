@@ -1,4 +1,4 @@
-package grokking
+package TwoPointers
 
 func MakeSquares(arr []int) []int {
 	n := len(arr)

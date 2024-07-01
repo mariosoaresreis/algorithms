@@ -1,4 +1,4 @@
-package grokking
+package TwoPointers
 
 func FindTargetPair(arr []int, targetSum int) []int {
 	// TODO: Write your code here

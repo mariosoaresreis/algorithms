@@ -1,4 +1,4 @@
-package grokking
+package TwoPointers
 
 func MoveElements(arr []int) int {
 	count := 1
