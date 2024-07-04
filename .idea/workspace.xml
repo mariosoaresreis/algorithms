@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4b64fa7-7967-49ee-a0fc-1c40855fc939" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/com/marioreis/grokking/FindTargetPair.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/marioreis/grokking/TwoPointers/TripletCloseToSum.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +55,7 @@
     &quot;Go Test.Test_NotPair in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
     &quot;Go Test.Test_Pair in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
     &quot;Go Test.Test_RemoveFromEmptyStack in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
+    &quot;Go Test.Test_SearchTriplet in algorithms/com/marioreis/grokking/TwoPointers.executor&quot;: &quot;Debug&quot;,
     &quot;Go Test.Test_Straight in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
     &quot;Go Test.Test_Straight_Flush in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
     &quot;Go Test.Test_ThreeOfAKind in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
@@ -88,11 +89,12 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/com/marioreis/grokking/TwoPointers" />
       <recent name="$PROJECT_DIR$/com/marioreis/signal" />
       <recent name="$PROJECT_DIR$/com/marioreis/code_writing" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.Test_almostIncreasingArray in algorithms/com/marioreis/signal">
+  <component name="RunManager" selected="Go Test.Test_SearchTriplet in algorithms/com/marioreis/grokking/TwoPointers">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="algorithms" />
       <working_directory value="$PROJECT_DIR$" />
@@ -126,16 +128,16 @@
       <pattern value="^\QTest_ExecCountMines\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_MatrixElementsSum in algorithms/com/marioreis/tdd" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+    <configuration name="Test_SearchTriplet in algorithms/com/marioreis/grokking/TwoPointers" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="algorithms" />
-      <working_directory value="$PROJECT_DIR$/com/marioreis/tdd" />
+      <working_directory value="$PROJECT_DIR$/com/marioreis/grokking/TwoPointers" />
       <root_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
-      <package value="algorithms/com/marioreis/tdd" />
+      <package value="algorithms/com/marioreis/grokking/TwoPointers" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTest_MatrixElementsSum\E$" />
+      <pattern value="^\QTest_SearchTriplet\E$" />
       <method v="2" />
     </configuration>
     <configuration name="Test_almostIncreasingArray in algorithms/com/marioreis/signal" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -164,11 +166,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.Test_SearchTriplet in algorithms/com/marioreis/grokking/TwoPointers" />
         <item itemvalue="Go Test.Test_almostIncreasingArray in algorithms/com/marioreis/signal" />
         <item itemvalue="Go Test.Test_ExecCountMines in algorithms/com/marioreis/signal" />
         <item itemvalue="Go Test.Test_CanInstantiateCard in algorithms/com/marioreis/tdd" />
         <item itemvalue="Go Test.Test_reverse in algorithms/com/marioreis/tdd" />
-        <item itemvalue="Go Test.Test_MatrixElementsSum in algorithms/com/marioreis/tdd" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +208,11 @@
       <workItem from="1719581842836" duration="7830000" />
       <workItem from="1719698203049" duration="1696000" />
       <workItem from="1719767643281" duration="5471000" />
-      <workItem from="1719842836503" duration="268000" />
+      <workItem from="1719842836503" duration="1121000" />
+      <workItem from="1719924331413" duration="1638000" />
+      <workItem from="1719936982676" duration="142000" />
+      <workItem from="1719966535178" duration="994000" />
+      <workItem from="1720097880353" duration="165000" />
     </task>
     <servers />
   </component>
@@ -273,6 +279,21 @@
           <url>file://$PROJECT_DIR$/com/marioreis/signal/AlmostIncreasingArray_test.go</url>
           <line>90</line>
           <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/com/marioreis/grokking/TwoPointers/Triplets_test.go</url>
+          <line>41</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/com/marioreis/grokking/TwoPointers/Triplets_test.go</url>
+          <line>35</line>
+          <option name="timeStamp" value="49" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/com/marioreis/grokking/TwoPointers/Triplets_test.go</url>
+          <line>12</line>
+          <option name="timeStamp" value="50" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
