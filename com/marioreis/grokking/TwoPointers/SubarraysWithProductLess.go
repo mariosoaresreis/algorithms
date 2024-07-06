@@ -1,7 +1,10 @@
 package TwoPointers
 
-import "fmt"
+import (
+	"fmt"
+)
 
+// Find subarrays with target
 func FindSubArrays(arr []int, target int) [][]int {
 	result := make([][]int, 0)
 

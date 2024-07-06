@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4b64fa7-7967-49ee-a0fc-1c40855fc939" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/com/marioreis/grokking/TwoPointers/SubarraysWithProductLess.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/marioreis/grokking/TwoPointers/SubarraysWithProductLess.go" beforeDir="false" afterPath="$PROJECT_DIR$/com/marioreis/grokking/TwoPointers/SubarraysWithProductLess.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,12 +212,24 @@
       <workItem from="1719924331413" duration="1638000" />
       <workItem from="1719936982676" duration="142000" />
       <workItem from="1719966535178" duration="994000" />
-      <workItem from="1720097880353" duration="918000" />
+      <workItem from="1720097880353" duration="3445000" />
+      <workItem from="1720290719479" duration="658000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
