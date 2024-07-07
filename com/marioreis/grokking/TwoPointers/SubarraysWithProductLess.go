@@ -2,14 +2,15 @@ package TwoPointers
 
 import (
 	"fmt"
+	"sort"
 )
 
 // Find subarrays with target
 func FindSubArrays(arr []int, target int) [][]int {
 	result := make([][]int, 0)
+	sort.Ints(arr)
 
 	for left := range arr {
-
 		for k := range arr {
 			product := 1
 			subarray := make([]int, 0)
