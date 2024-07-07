@@ -6,7 +6,8 @@ import (
 
 // deploy
 func main() {
-
+	array := []int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+	println(fmt.Sprintf("%v", array[1:3]))
 }
 
 // findElementsWithSum of k from arr of size

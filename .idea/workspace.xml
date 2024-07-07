@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4b64fa7-7967-49ee-a0fc-1c40855fc939" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/com/marioreis/grokking/TwoPointers/MinimumWindowSort.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/marioreis/grokking/FastSlowPointers/CiclicList.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/marioreis/grokking/TwoPointers/SubarraysWithProductLess.go" beforeDir="false" afterPath="$PROJECT_DIR$/com/marioreis/grokking/TwoPointers/SubarraysWithProductLess.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +95,7 @@
       <recent name="$PROJECT_DIR$/com/marioreis/code_writing" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.Test_SearchTriplet in algorithms/com/marioreis/grokking/TwoPointers">
+  <component name="RunManager" selected="Go Build.go build algorithms">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="algorithms" />
       <working_directory value="$PROJECT_DIR$" />
@@ -103,6 +103,15 @@
       <kind value="FILE" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build algorithms" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="algorithms" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="algorithms" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/main.go" />
       <method v="2" />
     </configuration>
     <configuration name="Test_CanInstantiateCard in algorithms/com/marioreis/tdd" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -153,25 +162,13 @@
       <pattern value="^\QTest_almostIncreasingArray\E$" />
       <method v="2" />
     </configuration>
-    <configuration name="Test_reverse in algorithms/com/marioreis/tdd" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="algorithms" />
-      <working_directory value="$PROJECT_DIR$/com/marioreis/tdd" />
-      <root_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="algorithms/com/marioreis/tdd" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTest_reverse\E$" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build algorithms" />
         <item itemvalue="Go Test.Test_SearchTriplet in algorithms/com/marioreis/grokking/TwoPointers" />
         <item itemvalue="Go Test.Test_almostIncreasingArray in algorithms/com/marioreis/signal" />
         <item itemvalue="Go Test.Test_ExecCountMines in algorithms/com/marioreis/signal" />
         <item itemvalue="Go Test.Test_CanInstantiateCard in algorithms/com/marioreis/tdd" />
-        <item itemvalue="Go Test.Test_reverse in algorithms/com/marioreis/tdd" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +211,7 @@
       <workItem from="1719936982676" duration="142000" />
       <workItem from="1719966535178" duration="994000" />
       <workItem from="1720097880353" duration="3445000" />
-      <workItem from="1720290719479" duration="4274000" />
+      <workItem from="1720290719479" duration="5855000" />
     </task>
     <servers />
   </component>
