@@ -25,3 +25,16 @@ func HasCycle(head *ListNode) bool {
 	// If no cycle is found, return false
 	return false
 }
+
+func FindMiddle(head *ListNode) *ListNode {
+	// TODO: Write your code here
+	slow := head
+	fast := head
+
+	for fast != nil && fast.Next != nil {
+		slow = slow.Next
+		fast = fast.Next.Next
+	}
+
+	return slow
+}

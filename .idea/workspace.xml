@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4b64fa7-7967-49ee-a0fc-1c40855fc939" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/com/marioreis/grokking/FastSlowPointers/CiclicList.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/marioreis/grokking/FastSlowPointers/CiclicList.go" beforeDir="false" afterPath="$PROJECT_DIR$/com/marioreis/grokking/FastSlowPointers/CiclicList.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +210,8 @@
       <workItem from="1719936982676" duration="142000" />
       <workItem from="1719966535178" duration="994000" />
       <workItem from="1720097880353" duration="3445000" />
-      <workItem from="1720290719479" duration="5855000" />
+      <workItem from="1720290719479" duration="7152000" />
+      <workItem from="1720444608878" duration="84000" />
     </task>
     <servers />
   </component>
