@@ -1,13 +1,30 @@
 package main
 
 import (
+	"algorithms/com/marioreis/grokking/FastSlowPointers"
 	"fmt"
 )
 
 // deploy
 func main() {
-	array := []int{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
-	println(fmt.Sprintf("%v", array[1:3]))
+	FastSlowPointers.ReverseLinkedList()
+}
+
+func findSumOfDigits(num int) int {
+	if num == 0 {
+		return 0
+	}
+
+	sum := 0
+	var digit int
+
+	for num > 0 {
+		digit = num % 10
+		sum += digit
+		num /= 10
+	}
+
+	return sum
 }
 
 // findElementsWithSum of k from arr of size
