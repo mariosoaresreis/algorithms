@@ -13,9 +13,7 @@ func FindMinSubArray(S int, arr []int) int {
 		for sum >= S {
 			length := i - windowStart + 1
 
-			if length < minLength {
-				minLength = length
-			}
+			minLength = min(length, minLength)
 
 			sum -= arr[windowStart]
 			windowStart++
@@ -27,4 +25,12 @@ func FindMinSubArray(S int, arr []int) int {
 	}
 
 	return minLength
+}
+
+func min(a, b int) int {
+	if a < b {
+		return a
+	}
+
+	return b
 }
