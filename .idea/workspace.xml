@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4b64fa7-7967-49ee-a0fc-1c40855fc939" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/com/marioreis/grokking/SlidingWindow/MaximumSubarray.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/com/marioreis/grokking/SlidingWindow/FindMinSubArray.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -215,7 +215,7 @@
       <workItem from="1720533337643" duration="2610000" />
       <workItem from="1720615618785" duration="4203000" />
       <workItem from="1720632493292" duration="33000" />
-      <workItem from="1720706225292" duration="53000" />
+      <workItem from="1720706225292" duration="677000" />
     </task>
     <servers />
   </component>
