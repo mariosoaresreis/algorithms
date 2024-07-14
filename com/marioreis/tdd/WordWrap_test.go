@@ -55,7 +55,8 @@ func wrap(word string, w int) string {
 }
 
 func assertWrap2(s string, i int, s2 string) bool {
-	return wrap2(s, i) == s2
+	//return wrap2(s, i) == s2
+	return false
 }
 
 func Test_Wrap5(t *testing.T) {
@@ -79,24 +80,4 @@ func Test_Wrap5(t *testing.T) {
 		t.Error("Test D failed")
 	}
 
-}
-
-func wrap2(word string, w int) string {
-	if len(word) <= w {
-		return word
-	}
-
-	wrappedWord := word
-
-	for len(wrappedWord)+3 > w {
-		lastIndex := strings.LastIndex(wrappedWord, " ")
-
-		if lastIndex == -1 {
-			return "..."
-		}
-
-		wrappedWord = wrappedWord[:lastIndex]
-	}
-
-	return wrappedWord + "..."
 }
