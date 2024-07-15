@@ -14,6 +14,45 @@ func Test_MatrixElementsSum(t *testing.T) {
 
 }
 
+func Test_CountDiffCharacters(t *testing.T) {
+	i := findLength("araaci", 1)
+	println(i)
+}
+
+func findLength(str string, k int) int {
+	frequency := make(map[rune]int)
+	maxLength := 0
+	startWindow := 0
+
+	for windowEnd, rightChar := range str {
+		frequency[rightChar]++
+
+		for len(frequency) > k {
+			startCharacter := rune(str[startWindow])
+			frequency[startCharacter]--
+
+			if frequency[startCharacter] == 0 {
+				delete(frequency, startCharacter)
+			}
+
+			startWindow++
+
+		}
+
+		maxLength = max(windowEnd+1-startWindow, maxLength)
+	}
+
+	return maxLength
+}
+
+func max(a, b int) int {
+	if a < b {
+		return b
+	}
+
+	return a
+}
+
 func solution1(matrix [][]int) int {
 	sum := 0
 

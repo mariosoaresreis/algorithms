@@ -23,6 +23,7 @@ func Solution(S string) string {
 		for j := 0; j < len(fields); j++ {
 			if len(fields[j]) == 0 || fields[j] == "NULL" {
 				err = true
+
 				break
 			}
 		}
