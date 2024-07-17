@@ -1,6 +1,6 @@
 package SlidingWindow
 
-func findLength(str string, k int) int {
+func FindLongestSubstring(str string, k int) int {
 	startWindow := 0
 	characterMap := make(map[rune]int)
 	maxCharactersDiff := k
@@ -20,7 +20,7 @@ func findLength(str string, k int) int {
 		}
 
 		if (endWindow - startWindow + 1) > maxLength {
-			maxLength = (endWindow - startWindow + 1)
+			maxLength = endWindow - startWindow + 1
 		}
 	}
 
