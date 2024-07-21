@@ -1,5 +1,8 @@
 package SlidingWindow
 
+/*
+*
+ */
 func FindLongestSubstring(str string, k int) int {
 	startWindow := 0
 	characterMap := make(map[rune]int)
