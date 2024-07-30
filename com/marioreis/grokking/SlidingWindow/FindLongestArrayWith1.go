@@ -1,6 +1,6 @@
 package SlidingWindow
 
-func findLength(arr []int, k int) int {
+func FindLength2(arr []int, k int) int {
 	maxLength, windowStart, maxOnesCount := 0, 0, 0
 
 	for windowEnd := 0; windowEnd < len(arr); windowEnd++ {
