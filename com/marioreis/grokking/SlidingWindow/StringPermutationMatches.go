@@ -5,16 +5,16 @@ func FindPermutation(str string, pattern string) bool {
 	leftWindow, match := 0, 0
 
 	for _, r := range pattern {
-		characters[rune(r)]++
+		characters[r]++
 	}
 
 	for rightWindow, rightChar := range str {
-		_, ok := characters[rune(rightChar)]
+		_, ok := characters[rightChar]
 
 		if ok {
-			characters[rune(rightChar)]--
+			characters[rightChar]--
 
-			if characters[rune(rightChar)] == 0 {
+			if characters[rightChar] == 0 {
 				match++
 			}
 		}
