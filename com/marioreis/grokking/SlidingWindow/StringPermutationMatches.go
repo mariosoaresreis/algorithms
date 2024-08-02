@@ -1,5 +1,6 @@
 package SlidingWindow
 
+// FindPermutation find if there is a permutation of the pattern in the str
 func FindPermutation(str string, pattern string) bool {
 	characters := make(map[rune]int)
 	leftWindow, match := 0, 0
