@@ -7,7 +7,6 @@ func FindStringAnagrams(str string, pattern string) []int {
 	for _, c := range pattern {
 		characters[rune(c)]++
 	}
-
 	resultIndices := make([]int, 0)
 
 	for windowRight := 0; windowRight < len(str); windowRight++ {
