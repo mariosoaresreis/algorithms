@@ -1,13 +1,16 @@
 package main
 
 import (
-	"algorithms/com/marioreis/grokking/FastSlowPointers"
+	"algorithms/com/marioreis/grokking/subsets"
 	"fmt"
 )
 
 // deploy
 func main() {
-	FastSlowPointers.ReverseLinkedList()
+	array := []int{1, 2, 3}
+	result := [][]int{}
+	subsets.FindPermutation(array, 0, &result)
+	println(fmt.Sprintf("%v", result))
 }
 
 func findSumOfDigits(num int) int {

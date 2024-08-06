@@ -8,5 +8,6 @@ func FindSubsetsWithDuplicates(nums []int) [][]int {
 			subsets = append(subsets, nums[i:j+1])
 		}
 	}
+
 	return subsets
 }
