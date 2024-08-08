@@ -1,16 +1,17 @@
 package main
 
 import (
-	"algorithms/com/marioreis/grokking/subsets"
 	"fmt"
 )
 
 // deploy
 func main() {
-	array := []int{1, 2, 3}
-	result := [][]int{}
-	subsets.FindPermutation(array, 0, &result)
-	println(fmt.Sprintf("%v", result))
+	array := []int{1, 2}
+	for len(array) > 0 {
+		array = array[:len(array)-1]
+	}
+
+	println(fmt.Sprintf("array: %v", array))
 }
 
 func findSumOfDigits(num int) int {
