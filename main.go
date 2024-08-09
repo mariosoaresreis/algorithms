@@ -4,14 +4,19 @@ import (
 	"fmt"
 )
 
+type Test struct {
+	Id *int
+}
+
 // deploy
 func main() {
-	array := []int{1, 2}
-	for len(array) > 0 {
-		array = array[:len(array)-1]
-	}
+	t := Test{}
 
-	println(fmt.Sprintf("array: %v", array))
+	printar(t)
+}
+
+func printar(t Test) {
+	println(fmt.Sprintf("array: %v", t.Id))
 }
 
 func findSumOfDigits(num int) int {
