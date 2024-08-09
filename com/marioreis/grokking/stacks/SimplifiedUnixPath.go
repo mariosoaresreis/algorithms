@@ -39,27 +39,41 @@ func (s *Stack) Top() (interface{}, error) {
 func SimplifyPath(path string) string {
 	stack := NewStack()
 	lastChar := rune(path[0])
+	result := ""
 
 	for i, char := range path {
 		if i == 0 {
-			if rune(char) == '/' && lastChar != '/' {
-				stack.Push(rune(char))
-			}
-
-			if rune(char) == '.' && lastChar == '.' {
-				currChar, _ := stack.Top()
-				for currChar == '/' || currChar == '.' {
-					stack.Pop()
-				}
-
-				stack.Pop()
-			}
-
-			lastChar = rune(char)
+			result += string(rune(char))
 			continue
 		}
 
+		//println(string(rune(char)))
+		if (rune(char) == '/' && lastChar != '/') || (rune(char) != '/' && rune(char) != '.') {
+			stack.Push(rune(char))
+			result += string(rune(char))
+		}
+
+		if rune(char) == '.' && lastChar == '.' {
+			currChar, _ := stack.Top()
+
+			for currChar == '/' || currChar == '.' {
+				result = result[:len(result)-1]
+				stack.Pop()
+				currChar, _ = stack.Top()
+			}
+
+			stack.Pop()
+			result = result[:len(result)-1]
+		}
+
+		//result = result[:len(result)]
+		lastChar = rune(char)
+
 	}
 
-	return "/"
+	if result[len(result)-1] == '/' {
+		result = result[:len(result)-1]
+	}
+	//println(result)
+	return result
 }

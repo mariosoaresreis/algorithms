@@ -1,6 +1,7 @@
 package main
 
 import (
+	"algorithms/com/marioreis/grokking/stacks"
 	"fmt"
 )
 
@@ -10,9 +11,7 @@ type Test struct {
 
 // deploy
 func main() {
-	t := Test{}
-
-	printar(t)
+	stacks.SimplifyPath("/a//b////c/d//././/..")
 }
 
 func printar(t Test) {
