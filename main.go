@@ -1,21 +1,68 @@
 package main
 
 import (
-	"algorithms/com/marioreis/grokking/stacks"
 	"fmt"
 )
 
 type Test struct {
-	Id *int
+	Value interface{} `json:"id"`
+	Scale int         `json:"scale"`
+}
+
+type ChecklistYesNo string
+
+const (
+	ChecklistYesNoYes ChecklistYesNo = "YES"
+	ChecklistYesNoNo  ChecklistYesNo = "NO"
+	ChecklistYesNoNA  ChecklistYesNo = "NOT_APPLICABLE"
+)
+
+func equalArrays(a, b []string) bool {
+	if len(a) != len(b) {
+		return false
+	}
+
+	mapA := make(map[string]int)
+	mapB := make(map[string]int)
+
+	for i := range a {
+		mapA[a[i]]++
+	}
+
+	for i := range b {
+		mapB[b[i]]++
+	}
+
+	if len(mapA) != len(mapB) {
+		return false
+	}
+
+	for k := range mapA {
+		if mapB[k] != mapA[k] {
+			return false
+		}
+	}
+
+	return true
+}
+
+type Task struct {
+	Value *ChecklistYesNo
 }
 
 // deploy
 func main() {
-	stacks.SimplifyPath("/a//b////c/d//././/..")
-}
+	t := Test{
+		Value: ChecklistYesNoYes,
+	}
 
-func printar(t Test) {
-	println(fmt.Sprintf("array: %v", t.Id))
+	value := ChecklistYesNoYes
+
+	task := Task{
+		Value: &value,
+	}
+
+	println(*task.Value == t.Value)
 }
 
 func findSumOfDigits(num int) int {
