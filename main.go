@@ -17,6 +17,34 @@ const (
 	ChecklistYesNoNA  ChecklistYesNo = "NOT_APPLICABLE"
 )
 
+func areEqualArrays(a, b []string) bool {
+	if len(a) != len(b) {
+		return false
+	}
+
+	counts := make(map[string]int)
+
+	for _, char := range a {
+		counts[char]++
+	}
+
+	for _, char := range b {
+		counts[char]--
+		if counts[char] < 0 {
+			return false
+		}
+	}
+
+	for _, count := range counts {
+		if count != 0 {
+			return false
+		}
+	}
+
+	return true
+}
+
+/*
 func equalArrays(a, b []string) bool {
 	if len(a) != len(b) {
 		return false
@@ -46,23 +74,19 @@ func equalArrays(a, b []string) bool {
 	return true
 }
 
+*/
+
 type Task struct {
 	Value *ChecklistYesNo
 }
 
 // deploy
 func main() {
-	t := Test{
-		Value: ChecklistYesNoYes,
-	}
+	arr1 := []string{"a", "b", "a", "a"}
+	arr2 := []string{"a", "a", "a", "b"}
 
-	value := ChecklistYesNoYes
+	println(areEqualArrays(arr1, arr2))
 
-	task := Task{
-		Value: &value,
-	}
-
-	println(*task.Value == t.Value)
 }
 
 func findSumOfDigits(num int) int {
