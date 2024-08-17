@@ -1,6 +1,7 @@
 package main
 
 import (
+	"algorithms/com/marioreis/grokking/subsets"
 	"fmt"
 )
 
@@ -82,10 +83,8 @@ type Task struct {
 
 // deploy
 func main() {
-	arr1 := []string{"a", "b", "a", "a"}
-	arr2 := []string{"a", "a", "a", "b"}
-
-	println(areEqualArrays(arr1, arr2))
+	var result [][]int
+	subsets.FindPermutation([]int{1, 2, 3}, 0, &result)
 
 }
 
