@@ -1,7 +1,7 @@
 package main
 
 import (
-	"algorithms/com/marioreis/grokking/subsets"
+	"algorithms/com/marioreis/grokking/MergeIntervals"
 	"fmt"
 )
 
@@ -83,8 +83,9 @@ type Task struct {
 
 // deploy
 func main() {
-	var result [][]int
-	subsets.FindPermutation([]int{1, 2, 3}, 0, &result)
+	intervals := []MergeIntervals.Interval{MergeIntervals.Interval{1, 4}, MergeIntervals.Interval{2, 5}, MergeIntervals.Interval{7, 9}}
+
+	MergeIntervals.Merge(intervals)
 
 }
 
