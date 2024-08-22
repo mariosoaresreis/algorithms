@@ -13,6 +13,7 @@ type Node interface {
 	GetWeightPercentage() float64
 	SetWeightPercentage(weightPercentage float64)
 	HasChildren() bool
+	GetOrder() int64
 }
 
 type Tree struct {
@@ -32,7 +33,7 @@ func NewTree() *Tree {
 	return tree
 }
 
-func (t *Tree) PopulateTree(nodes []Node) {
+func (t *Tree) Populate(nodes []Node) {
 	t.addNodes(nodes)
 	// Parents and children
 	t.buildRelationships(nodes)

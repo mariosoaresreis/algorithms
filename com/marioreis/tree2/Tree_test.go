@@ -13,6 +13,7 @@ type NodeInstance struct {
 	Children         []Node
 	Points           float64
 	WeightPercentage float64
+	Order            int64
 }
 
 func (n *NodeInstance) GetId() string {
@@ -61,6 +62,10 @@ func (n *NodeInstance) GetPoints() float64 {
 
 func (n *NodeInstance) SetPoints(points float64) {
 	n.Points = points
+}
+
+func (n *NodeInstance) GetOrder() int64 {
+	return n.Order
 }
 
 func Test_Tree(t *testing.T) {

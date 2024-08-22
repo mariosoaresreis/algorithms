@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4b64fa7-7967-49ee-a0fc-1c40855fc939" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/com/marioreis/grokking/SlidingWindow/FindStringUniqueChars.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/marioreis/tree2/Tree.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/com/marioreis/tree2/Tree_test.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/marioreis/tree2/Tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/com/marioreis/tree2/Tree.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/com/marioreis/tree2/Tree_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/com/marioreis/tree2/Tree_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,19 +227,19 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Test.Test_Tree in algorithms/com/marioreis/tree2" />
-        <item itemvalue="Go Test.Test_Tree in algorithms/com/marioreis/tree" />
-        <item itemvalue="Go Build.go build algorithms" />
-        <item itemvalue="Go Test.Test_CountDiffCharacters in algorithms/com/marioreis/signal" />
         <item itemvalue="Go Test.Test_Wrap6 in algorithms/com/marioreis/tdd" />
+        <item itemvalue="Go Test.Test_Tree in algorithms/com/marioreis/tree" />
+        <item itemvalue="Go Test.Test_Tree in algorithms/com/marioreis/tree2" />
+        <item itemvalue="Go Test.Test_SearchTriplet in algorithms/com/marioreis/grokking/TwoPointers" />
+        <item itemvalue="Go Test.Test_CountDiffCharacters in algorithms/com/marioreis/signal" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-gosdk-5df93f7ad4aa-dfc284eb1eb8-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-242.20224.306" />
-        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-GO-242.20224.306" />
+        <option value="bundled-gosdk-5df93f7ad4aa-dfc284eb1eb8-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-242.20224.424" />
+        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-GO-242.20224.424" />
       </set>
     </attachedChunks>
   </component>
