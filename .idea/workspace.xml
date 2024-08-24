@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d4b64fa7-7967-49ee-a0fc-1c40855fc939" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/marioreis/tree2/Tree.go" beforeDir="false" afterPath="$PROJECT_DIR$/com/marioreis/tree2/Tree.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/com/marioreis/tree2/Tree_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/com/marioreis/tree2/Tree_test.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +237,6 @@
     <attachedChunks>
       <set>
         <option value="bundled-gosdk-5df93f7ad4aa-dfc284eb1eb8-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-242.20224.424" />
-        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-GO-242.20224.424" />
       </set>
     </attachedChunks>
   </component>
