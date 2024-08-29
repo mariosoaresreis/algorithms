@@ -1,7 +1,6 @@
 package main
 
 import (
-	"algorithms/com/marioreis/grokking/MergeIntervals"
 	"fmt"
 )
 
@@ -83,11 +82,6 @@ type Task struct {
 
 // deploy
 func main() {
-	intervals := []MergeIntervals.Interval{
-		MergeIntervals.Interval{1, 3}, MergeIntervals.Interval{5, 7},
-		MergeIntervals.Interval{8, 12}}
-
-	println(fmt.Sprintf("%v", MergeIntervals.Insert(intervals, MergeIntervals.Interval{4, 6})))
 
 }
 
