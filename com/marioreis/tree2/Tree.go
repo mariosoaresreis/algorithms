@@ -16,6 +16,7 @@ type Node interface {
 	GetOrder() int64
 }
 
+// Tree node
 type Tree struct {
 	Nodes          map[string]Node // All nodes
 	GroupedNodes   map[string]Node
