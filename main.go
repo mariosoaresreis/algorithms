@@ -85,7 +85,7 @@ func main() {
 
 }
 
-func findSumOfDigits(num int) int {
+func FindSumOfDigits(num int) int {
 	if num == 0 {
 		return 0
 	}
