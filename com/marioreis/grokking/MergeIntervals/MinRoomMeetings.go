@@ -30,24 +30,31 @@ func (h *MeetingHeap) Pop() interface{} {
 }
 
 func FindMinimumMeetingRooms2(meetings []Meeting) int {
-	result := make([][]Meeting, 0)
+	stack := make([]Meeting, 0)
+	minRooms := 0
 
+	if len(meetings) == 0 {
+		return 0
+	}
+
+	// sort the meetings by start time
 	sort.Slice(meetings, func(i, j int) bool {
 		return meetings[i].Start < meetings[j].Start
 	})
 
-	for j, _ := range meetings {
-		for i := 0; i < len(result); i++ {
-			if len(result[i]) == 0 || meetings[j].Start < result[i][len(result)-1].End {
-				result = append(result, []Meeting{})
-				result[len(result)-1] = append(result[len(result)-1], meetings[j])
-			} else {
-				result[i] = append(result[i], meetings[j])
-			}
+	for i, _ := range meetings {
+		for len(stack) > 0 && meetings[i].Start >= stack[0].End {
+			stack = stack[:len(stack)-1]
+		}
+
+		stack = append(stack, meetings[i])
+
+		if len(stack) > minRooms {
+			minRooms = len(stack)
 		}
 	}
 
-	return len(result)
+	return minRooms
 }
 
 func FindMinimumMeetingRooms(meetings []Meeting) int {
