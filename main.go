@@ -1,6 +1,7 @@
 package main
 
 import (
+	"algorithms/com/marioreis/grokking/MergeIntervals"
 	"fmt"
 )
 
@@ -82,7 +83,13 @@ type Task struct {
 
 // deploy
 func main() {
+	// [[4,5], [2,3], [2,4], [3,5]]
+	meeting1 := MergeIntervals.Meeting{Start: 2, End: 3}
+	meeting2 := MergeIntervals.Meeting{Start: 2, End: 4}
+	meeting3 := MergeIntervals.Meeting{Start: 3, End: 5}
+	meetings := []MergeIntervals.Meeting{meeting1, meeting2, meeting3}
 
+	println(MergeIntervals.FindMinimumMeetingRooms2(meetings))
 }
 
 func FindSumOfDigits(num int) int {
