@@ -1,8 +1,11 @@
 package main
 
 import (
+	"math/rand/v2"
 	"regexp"
 	"strings"
+	"sync"
+	"time"
 )
 
 type Test struct {
@@ -164,9 +167,35 @@ func max(i, j int) int {
 
 // deploy
 func main() {
-	println(maxVowels("weallloveyou", 7))
+	result := make(chan int)
+	wg := sync.WaitGroup{}
 
+	go func() {
+		for i := 0; i < 100; i++ {
+			wg.Add(1)
+			go func() {
+				defer wg.Done()
+				work := DoWork()
+				result <- work
+
+			}()
+		}
+
+		wg.Wait()
+		close(result)
+	}()
+
+	for i := range result {
+		println(i)
+	}
 }
+
+func DoWork() int {
+	time.Sleep(1 * time.Second)
+	result := rand.IntN(100)
+	return result
+}
+
 func maxVowels(s string, k int) int {
 	mapVowels := make(map[rune]int)
 	mapVowels['a'] = 1
