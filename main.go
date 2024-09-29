@@ -1,8 +1,8 @@
 package main
 
 import (
-	"algorithms/com/marioreis/grokking/MergeIntervals"
-	"fmt"
+	"regexp"
+	"strings"
 )
 
 type Test struct {
@@ -81,53 +81,137 @@ type Task struct {
 	Value *ChecklistYesNo
 }
 
+func isAlphanumeric(str string) bool {
+	var alphanumeric = regexp.MustCompile("^[a-zA-Z0-9_]*$")
+	return alphanumeric.MatchString(str)
+
+}
+
+func isPalindrome(s string) bool {
+	if len(s) == 0 || len(s) == 1 {
+		return true
+	}
+
+	leftWindow := 0
+
+	for i := len(s) - 1; i >= 0; {
+		println(string(rune(s[i])))
+		println(string(rune(s[leftWindow])))
+
+		for !isAlphanumeric(string(rune(s[i]))) {
+			i--
+		}
+
+		for !isAlphanumeric(string(rune(s[leftWindow]))) {
+			leftWindow++
+		}
+
+		if strings.ToUpper(string(rune(s[i]))) != strings.ToUpper(string(rune(s[leftWindow]))) {
+			return false
+		}
+
+		i--
+		leftWindow++
+	}
+
+	return true
+}
+func longestSubarray(nums []int) int {
+	maxOneCount := 0
+	left := 0
+	maxResult := 0
+	zeroCount := 0
+
+	for right := 0; right < len(nums); right++ {
+		if nums[right] == 1 {
+			maxOneCount++
+		} else {
+			zeroCount++
+		}
+
+		if right-left+1-maxOneCount > 1 {
+			if nums[left] == 1 {
+				maxOneCount--
+			} else {
+				zeroCount--
+			}
+
+			left++
+		}
+
+		sumWindow := right - left + 1
+
+		if sumWindow > maxResult {
+			maxResult = sumWindow
+		}
+
+	}
+
+	if zeroCount > 0 {
+		return maxResult
+	}
+
+	return maxResult - 1
+}
+
+func max(i, j int) int {
+	if i > j {
+		return i
+	}
+
+	return j
+}
+
 // deploy
 func main() {
-	// [[4,5], [2,3], [2,4], [3,5]]
-	meeting1 := MergeIntervals.Meeting{Start: 2, End: 3}
-	meeting2 := MergeIntervals.Meeting{Start: 2, End: 4}
-	meeting3 := MergeIntervals.Meeting{Start: 3, End: 5}
-	meetings := []MergeIntervals.Meeting{meeting1, meeting2, meeting3}
+	println(maxVowels("weallloveyou", 7))
 
-	println(MergeIntervals.FindMinimumMeetingRooms2(meetings))
 }
+func maxVowels(s string, k int) int {
+	mapVowels := make(map[rune]int)
+	mapVowels['a'] = 1
+	mapVowels['e'] = 1
+	mapVowels['i'] = 1
+	mapVowels['o'] = 1
+	mapVowels['u'] = 1
+	left := 0
+	maxCount := 0
 
-func FindSumOfDigits(num int) int {
-	if num == 0 {
-		return 0
-	}
+	for right := 0; right < len(s) && left < len(s); {
+		windowSize := right - left + 1
 
-	sum := 0
-	var digit int
+		if windowSize > k {
+			left++
 
-	for num > 0 {
-		digit = num % 10
-		sum += digit
-		num /= 10
-	}
+			if right < left {
+				right = left
+			}
 
-	return sum
-}
-
-// findElementsWithSum of k from arr of size
-func findElementsWithSum(arr [10]int, combinations [19]int, size int, k int, addValue int, l int, m int) int {
-	var num int = 0
-	if addValue > k {
-		return -1
-	}
-	if addValue == k {
-		num = num + 1
-		var p int = 0
-		for p = 0; p < m; p++ {
-			fmt.Printf("%d,", arr[combinations[p]])
+			continue
 		}
-		fmt.Println(" ")
+
+		if !isVowel(rune(s[left]), mapVowels) {
+			left++
+			if right < left {
+				right = left
+			}
+			continue
+		}
+
+		if !isVowel(rune(s[right]), mapVowels) {
+
+			left = right
+			continue
+		}
+
+		maxCount = max(maxCount, windowSize)
+		right++
 	}
-	var i int
-	for i = l; i < size; i++ {
-		combinations[m] = l
-		findElementsWithSum(arr, combinations, size, k, addValue+arr[i], l, m+1)
-		l = l + 1
-	}
-	return num
+
+	return maxCount
+}
+
+func isVowel(char rune, m map[rune]int) bool {
+	_, ok := m[char]
+	return ok
 }
