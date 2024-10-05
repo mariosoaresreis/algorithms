@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"math/rand/v2"
 	"regexp"
 	"strings"
@@ -168,16 +169,15 @@ func max(i, j int) int {
 // deploy
 func main() {
 	result := make(chan int)
-	wg := sync.WaitGroup{}
 
 	go func() {
+		wg := sync.WaitGroup{}
+
 		for i := 0; i < 100; i++ {
-			wg.Add(1)
 			go func() {
 				defer wg.Done()
-				work := DoWork()
-				result <- work
-
+				wg.Add(1)
+				result <- DoWork()
 			}()
 		}
 
@@ -186,8 +186,9 @@ func main() {
 	}()
 
 	for i := range result {
-		println(i)
+		fmt.Println(i)
 	}
+
 }
 
 func DoWork() int {
