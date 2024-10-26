@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="ALL" />
+    <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4b64fa7-7967-49ee-a0fc-1c40855fc939" name="Changes" comment="">
+    <list default="true" id="4e29fd5c-1e64-4a18-ab5f-3d7819f935e3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/com/marioreis/grokking/tree/transverseNode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/golinter.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,99 +22,42 @@
       </list>
     </option>
   </component>
-  <component name="GOROOT" url="file://$USER_HOME$/go1.22.1.linux-amd64/go/pkg/mod/golang.org/toolchain@v0.0.1-go1.22.2.linux-amd64" />
+  <component name="GOROOT" url="file://$USER_HOME$/go/go1.23.0" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
 }</component>
-  <component name="ProjectId" id="2hpRKXItYOI2KNSQzbKuMN1FOd5" />
+  <component name="ProjectId" id="2na3ZHb4fdkqxvTHi7yV16OiRSi" />
   <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
-    <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
-    &quot;Go Build.go build algorithms.executor&quot;: &quot;Debug&quot;,
-    &quot;Go Test.Test_AddCardToHand in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
-    &quot;Go Test.Test_AddCardToHandAndEvalAllSuitsEqual in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
-    &quot;Go Test.Test_AddCardToHandAndEvalAllSuitsNotEqual in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
-    &quot;Go Test.Test_AddCardToHandAndEvalHighestCard in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
-    &quot;Go Test.Test_AddCardToHandAndEvalIsSequence in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
-    &quot;Go Test.Test_AddCardToHandAndEvalIsSequenceWithAceValuesOne in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
-    &quot;Go Test.Test_AddCardToHandAndOrder in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
-    &quot;Go Test.Test_CanInstantiateCard in algorithms/com/marioreis/tdd.executor&quot;: &quot;Debug&quot;,
-    &quot;Go Test.Test_CountDiffCharacters in algorithms/com/marioreis/signal.executor&quot;: &quot;Debug&quot;,
-    &quot;Go Test.Test_ExecCountMines in algorithms/com/marioreis/signal.executor&quot;: &quot;Run&quot;,
-    &quot;Go Test.Test_Flush in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
-    &quot;Go Test.Test_FourOfAKind in algorithms/com/marioreis/tdd.executor&quot;: &quot;Debug&quot;,
-    &quot;Go Test.Test_FullHouse in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
-    &quot;Go Test.Test_GetCardValue in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
-    &quot;Go Test.Test_HighCard in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
-    &quot;Go Test.Test_IsHandRoyalFlush in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
-    &quot;Go Test.Test_MatrixElementsSum in algorithms/com/marioreis/tdd.executor&quot;: &quot;Debug&quot;,
-    &quot;Go Test.Test_NotPair in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
-    &quot;Go Test.Test_Pair in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
-    &quot;Go Test.Test_RemoveFromEmptyStack in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
-    &quot;Go Test.Test_SearchTriplet in algorithms/com/marioreis/grokking/TwoPointers.executor&quot;: &quot;Debug&quot;,
-    &quot;Go Test.Test_Straight in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
-    &quot;Go Test.Test_Straight_Flush in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
-    &quot;Go Test.Test_ThreeOfAKind in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
-    &quot;Go Test.Test_Tree in algorithms/com/marioreis/tree.executor&quot;: &quot;Run&quot;,
-    &quot;Go Test.Test_Tree in algorithms/com/marioreis/tree2.executor&quot;: &quot;Run&quot;,
-    &quot;Go Test.Test_TwoPair in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
-    &quot;Go Test.Test_Wrap in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
-    &quot;Go Test.Test_Wrap2 in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
-    &quot;Go Test.Test_Wrap3 in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
-    &quot;Go Test.Test_Wrap4 in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
-    &quot;Go Test.Test_Wrap5 in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
-    &quot;Go Test.Test_Wrap6 in algorithms/com/marioreis/tdd.executor&quot;: &quot;Debug&quot;,
-    &quot;Go Test.Test_almostIncreasingArray in algorithms/com/marioreis/signal.executor&quot;: &quot;Debug&quot;,
-    &quot;Go Test.Test_almostIncreasingArray in algorithms/com/marioreis/tdd.executor&quot;: &quot;Debug&quot;,
-    &quot;Go Test.Test_order in algorithms/com/marioreis/tdd.executor&quot;: &quot;Run&quot;,
-    &quot;Go Test.Test_reverse in algorithms/com/marioreis/tdd.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.automatic.dependencies.download&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/bat/work/workspace/go/algorithms&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.64942527&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "Go Build.go build algorithms.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "advanced.settings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/com/marioreis/grokking/TwoPointers" />
-      <recent name="$PROJECT_DIR$/com/marioreis/signal" />
-      <recent name="$PROJECT_DIR$/com/marioreis/code_writing" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Go Build.go build algorithms">
-    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
-      <module name="algorithms" />
-      <working_directory value="$PROJECT_DIR$" />
-      <go_parameters value="-i" />
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
+}]]></component>
+  <component name="RunManager">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="algorithms" />
       <working_directory value="$PROJECT_DIR$" />
@@ -130,324 +76,52 @@
       <filePath value="$PROJECT_DIR$/main.go" />
       <method v="2" />
     </configuration>
-    <configuration name="go build algorithms" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
       <module name="algorithms" />
       <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="algorithms" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/main.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Test_CountDiffCharacters in algorithms/com/marioreis/signal" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="algorithms" />
-      <working_directory value="$PROJECT_DIR$/com/marioreis/signal" />
-      <root_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="algorithms/com/marioreis/signal" />
+      <go_parameters value="-i" />
+      <kind value="DIRECTORY" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <framework value="gotest" />
-      <pattern value="^\QTest_CountDiffCharacters\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Test_CountDiffCharacters in algorithms/com/marioreis/signal" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="algorithms" />
-      <working_directory value="$PROJECT_DIR$/com/marioreis/signal" />
-      <root_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="algorithms/com/marioreis/signal" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTest_CountDiffCharacters\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Test_SearchTriplet in algorithms/com/marioreis/grokking/TwoPointers" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="algorithms" />
-      <working_directory value="$PROJECT_DIR$/com/marioreis/grokking/TwoPointers" />
-      <root_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="algorithms/com/marioreis/grokking/TwoPointers" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTest_SearchTriplet\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Test_Tree in algorithms/com/marioreis/tree" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="algorithms" />
-      <working_directory value="$PROJECT_DIR$/com/marioreis/tree" />
-      <root_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="algorithms/com/marioreis/tree" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTest_Tree\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Test_Tree in algorithms/com/marioreis/tree2" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="algorithms" />
-      <working_directory value="$PROJECT_DIR$/com/marioreis/tree2" />
-      <root_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="algorithms/com/marioreis/tree2" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTest_Tree\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Test_Wrap6 in algorithms/com/marioreis/tdd" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="algorithms" />
-      <working_directory value="$PROJECT_DIR$/com/marioreis/tdd" />
-      <root_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="algorithms/com/marioreis/tdd" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTest_Wrap6\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Test_Wrap6 in algorithms/com/marioreis/tdd" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="algorithms" />
-      <working_directory value="$PROJECT_DIR$/com/marioreis/tdd" />
-      <root_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="algorithms/com/marioreis/tdd" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <framework value="gotest" />
-      <pattern value="^\QTest_Wrap6\E$" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build algorithms" />
-        <item itemvalue="Go Test.Test_Wrap6 in algorithms/com/marioreis/tdd" />
-        <item itemvalue="Go Test.Test_Tree in algorithms/com/marioreis/tree" />
-        <item itemvalue="Go Test.Test_Tree in algorithms/com/marioreis/tree2" />
-        <item itemvalue="Go Test.Test_SearchTriplet in algorithms/com/marioreis/grokking/TwoPointers" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-gosdk-5df93f7ad4aa-df9ad98b711f-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-242.21829.165" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
       </set>
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d4b64fa7-7967-49ee-a0fc-1c40855fc939" name="Changes" comment="" />
-      <created>1718288969247</created>
+      <changelist id="4e29fd5c-1e64-4a18-ab5f-3d7819f935e3" name="Changes" comment="" />
+      <created>1729197413817</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1718288969247</updated>
-      <workItem from="1718288970585" duration="1019000" />
-      <workItem from="1718369371922" duration="5223000" />
-      <workItem from="1718391406412" duration="14519000" />
-      <workItem from="1718572600300" duration="1992000" />
-      <workItem from="1718640088489" duration="295000" />
-      <workItem from="1718662310415" duration="8796000" />
-      <workItem from="1718715954591" duration="7771000" />
-      <workItem from="1718926479612" duration="685000" />
-      <workItem from="1719002102048" duration="11212000" />
-      <workItem from="1719235546161" duration="1585000" />
-      <workItem from="1719322557690" duration="740000" />
-      <workItem from="1719412293349" duration="5183000" />
-      <workItem from="1719501858663" duration="1299000" />
-      <workItem from="1719509216209" duration="53000" />
-      <workItem from="1719581842836" duration="7830000" />
-      <workItem from="1719698203049" duration="1696000" />
-      <workItem from="1719767643281" duration="5471000" />
-      <workItem from="1719842836503" duration="1121000" />
-      <workItem from="1719924331413" duration="1638000" />
-      <workItem from="1719936982676" duration="142000" />
-      <workItem from="1719966535178" duration="994000" />
-      <workItem from="1720097880353" duration="3445000" />
-      <workItem from="1720290719479" duration="7152000" />
-      <workItem from="1720444608878" duration="1301000" />
-      <workItem from="1720533337643" duration="2610000" />
-      <workItem from="1720615618785" duration="4203000" />
-      <workItem from="1720632493292" duration="33000" />
-      <workItem from="1720706225292" duration="2752000" />
-      <workItem from="1720810238513" duration="607000" />
-      <workItem from="1720811188970" duration="1958000" />
-      <workItem from="1720870727371" duration="7957000" />
-      <workItem from="1720989870911" duration="76000" />
-      <workItem from="1720989959395" duration="105000" />
-      <workItem from="1720990077228" duration="1144000" />
-      <workItem from="1721000876852" duration="599000" />
-      <workItem from="1721054035828" duration="2621000" />
-      <workItem from="1721140208239" duration="650000" />
-      <workItem from="1721153766275" duration="4000" />
-      <workItem from="1721219311360" duration="11000" />
-      <workItem from="1721223401025" duration="8000" />
-      <workItem from="1721233399076" duration="683000" />
+      <updated>1729197413817</updated>
+      <workItem from="1729197414939" duration="1329000" />
+      <workItem from="1729251323537" duration="431000" />
+      <workItem from="1729556284307" duration="2440000" />
+      <workItem from="1729605334687" duration="3568000" />
+      <workItem from="1729623405716" duration="3987000" />
+      <workItem from="1729776336366" duration="2712000" />
+      <workItem from="1729886628625" duration="3346000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/tdd/Poker_test.go</url>
-          <line>290</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/tdd/Poker_test.go</url>
-          <line>376</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/tdd/Poker.go</url>
-          <line>219</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/tdd/Poker.go</url>
-          <line>247</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/tdd/Poker.go</url>
-          <line>260</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/tdd/WordWrap_test.go</url>
-          <line>14</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/signal/MatrixElementsSum_test.go</url>
-          <line>8</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/signal/AlmostIncreasingArray_test.go</url>
-          <line>24</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/signal/AlmostIncreasingArray_test.go</url>
-          <line>11</line>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/tdd/Poker_test.go</url>
-          <line>16</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/signal/AlmostIncreasingArray_test.go</url>
-          <line>90</line>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/grokking/TwoPointers/Triplets_test.go</url>
-          <line>41</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/grokking/TwoPointers/Triplets_test.go</url>
-          <line>35</line>
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/grokking/TwoPointers/Triplets_test.go</url>
-          <line>12</line>
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/grokking/FastSlowPointers/ReverseLinkeList.go</url>
-          <line>3</line>
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/grokking/FastSlowPointers/ReverseLinkeList.go</url>
-          <line>41</line>
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/signal/MatrixElementsSum_test.go</url>
-          <line>19</line>
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/signal/MatrixElementsSum_test.go</url>
-          <line>27</line>
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/signal/MatrixElementsSum_test.go</url>
-          <line>17</line>
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/grokking/stacks/SimplifiedUnixPath.go</url>
-          <line>77</line>
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/grokking/stacks/SimplifiedUnixPath.go</url>
-          <line>39</line>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/grokking/stacks/SimplifiedUnixPath.go</url>
-          <line>49</line>
-          <option name="timeStamp" value="68" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/grokking/MergeIntervals/MergeIntervals.go</url>
-          <line>11</line>
-          <option name="timeStamp" value="69" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/grokking/MergeIntervals/InsertInterval.go</url>
-          <line>5</line>
-          <option name="timeStamp" value="70" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/tree/Tree_test.go</url>
-          <line>8</line>
-          <option name="timeStamp" value="72" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/tree/Tree_test.go</url>
-          <line>58</line>
-          <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/com/marioreis/grokking/MergeIntervals/MinRoomMeetings.go</url>
-          <line>60</line>
-          <option name="timeStamp" value="76" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
